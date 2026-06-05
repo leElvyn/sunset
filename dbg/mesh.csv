@@ -1,0 +1,4 @@
+VTX, IDX, STATUS
+---, ---, No current draw action
+---, ---, Selected EID @8 - glXSwapBuffers(Backbuffer Color)
+---, ---, Effective EID: @8 - glXSwapBuffers(Backbuffer Color)
