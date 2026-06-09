@@ -117,13 +117,16 @@ static const glm::vec3 LIGHT_COLOR(1.0f, 0.55f, 0.15f); // warm orange
 void render_loop(GLFWwindow *win,
                  const Uniforms &u, Camera &camera,
                  program* skinned_prog, program* static_prog,
-                 program* flare_prog) {
+                 program* sky_prog, program* flare_prog,
+                 program* shadow_skinned_prog, program* shadow_static_prog) {
     double time = glfwGetTime();
 
     Scene scene;
     scene.skinned_prog = skinned_prog;
     scene.static_prog  = static_prog;
+    scene.sky_prog     = sky_prog;
     scene.init_lens_flare(flare_prog);
+    scene.init_shadow_map(shadow_skinned_prog, shadow_static_prog);
     scene.add_object("res/models/stage/Untitled.gltf",
                      glm::translate(glm::mat4(1.0f), glm::vec3(75.0f, 0.0f, 0.0f)), 2);
     int horse_obj = scene.add_object("res/models/Horse/Epona.gltf",
@@ -164,7 +167,7 @@ void render_loop(GLFWwindow *win,
 
         glUniform2f(u.res, (float) w, (float) h);
 
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClearColor(0.f, 0.f, 0.f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         // Transforms pilotés par la cutscene, tant qu'elle joue
@@ -193,7 +196,10 @@ int main() {
 
     program* skinned_prog = program::make_program("shaders/vertex.glsl",        "shaders/frag.glsl");
     program* static_prog  = program::make_program("shaders/vertex_static.glsl", "shaders/frag.glsl");
-    program* flare_prog   = program::make_program("shaders/lens_flare.vert",    "shaders/lens_flare.frag");
+    program* sky_prog            = program::make_program("shaders/lens_flare.vert",   "shaders/sky.frag");
+    program* flare_prog          = program::make_program("shaders/lens_flare.vert",   "shaders/lens_flare.frag");
+    program* shadow_skinned_prog = program::make_program("shaders/shadow.vert",        "shaders/shadow.frag");
+    program* shadow_static_prog  = program::make_program("shaders/shadow_static.vert", "shaders/shadow.frag");
 
     std::cout << skinned_prog->get_log();
     skinned_prog->use();
@@ -205,7 +211,8 @@ int main() {
 
     glfwSetWindowUserPointer(win, &camera);
 
-    render_loop(win, u, camera, skinned_prog, static_prog, flare_prog);
+    render_loop(win, u, camera, skinned_prog, static_prog, sky_prog, flare_prog,
+                shadow_skinned_prog, shadow_static_prog);
 }
 
 const char* __asan_default_options() { return "detect_leaks=0"; }
