@@ -36,10 +36,20 @@ struct AnimationChannel {
 struct Animation {
     std::string name;
     std::vector<AnimationChannel> channels;
-    float duration;
+    float duration = 0.0f;
 };
 
-void process_animations(const tinygltf::Model& model, Animation* animation, float time_t, GLint uniforms);
+struct AnimLayer {
+    Animation* anim = nullptr;
+    float      time = 0.0f;
+};
+
+void process_animations(const tinygltf::Model& model,
+                        Animation* anim_a, float time_a,
+                        Animation* anim_b, float time_b, float blend,
+                        const std::vector<AnimLayer>& layers,
+                        GLint uniforms);
+
 std::vector<Animation> parse_animations(const tinygltf::Model& model);
 
 #endif //BLACKRAY_ANIMATIONS_H

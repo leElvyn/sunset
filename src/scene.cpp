@@ -11,10 +11,12 @@ bool Scene::add_object(const char* path, glm::mat4 transform, int anim_index) {
     if (!loadModel(obj.raw_model, path))
         return false;
 
-    obj.gl_model    = bindModel(obj.raw_model);
-    obj.animations  = parse_animations(obj.raw_model);
+    obj.gl_model     = bindModel(obj.raw_model);
+    obj.animations   = parse_animations(obj.raw_model);
     obj.model_matrix = transform;
-    obj.anim_index  = anim_index;
+
+    // Timeline par défaut : boucler sur l'animation demandée
+    obj.timeline.then(anim_index, -1.0f, true);
 
     objects.push_back(std::move(obj));
     return true;
@@ -40,9 +42,15 @@ void Scene::draw(glm::mat4 view_projection, glm::vec3 light_pos, float time) {
             GLint jm_loc = glGetUniformLocation(prog->prog_id, "u_joint_matrices");
             Animation* anim = nullptr;
             if (!obj.animations.empty()) {
-                int idx = obj.anim_index < (int)obj.animations.size()
-                              ? obj.anim_index : 0;
-                anim = &obj.animations[idx];
+                auto eval = obj.timeline.evaluate(obj.animations, time);
+                anim_a = &obj.animations[eval.anim_index];
+                time_a = eval.local_time;
+
+                if (eval.next_anim_index >= 0) {
+                    anim_b = &obj.animations[eval.next_anim_index];
+                    time_b = eval.next_local_time;
+                    blend  = eval.blend;
+                }
             }
             process_animations(obj.raw_model, anim, time, jm_loc);
         }

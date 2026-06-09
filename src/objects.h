@@ -11,6 +11,7 @@
 #include <glm/trigonometric.hpp>
 #include "animations.h"
 #include "models.h"
+#include "timeline.h"
 #include "tinygltf.h"
 
 struct vertex {
@@ -28,7 +29,8 @@ struct Object {
     tinygltf::Model raw_model;
     GLModel gl_model;
     std::vector<Animation> animations;
-    int anim_index = 0;
+    Timeline timeline;
+    std::vector<Timeline> extra_layers;
     glm::mat4 model_matrix = glm::mat4(1.0f);
 };
 

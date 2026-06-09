@@ -122,8 +122,15 @@ void render_loop(GLFWwindow *win,
     scene.static_prog  = static_prog;
     //scene.add_object("res/models/zelda/Untitled.gltf",
     //                 glm::translate(glm::mat4(1.0f), glm::vec3(75.0f, 0.0f, 0.0f)), 2);
-    scene.add_object("res/models/stage/Untitled.gltf",
-                     glm::mat4(1.0f), 0);
+    scene.add_object("res/models/zelda/Untitled.gltf",
+                     glm::mat4(1.0f), 4);
+    // Remplacer la timeline par défaut par une séquence personnalisée
+    scene.objects[0].extra_layers.push_back(
+      Timeline{}.then(0, -1.0f, true)  // loop anim 0 independently
+    );
+    scene.objects[0].extra_layers.push_back(
+      Timeline{}.then(4, -1.0f, true)  // loop anim 0 independently
+    );
 
     // Pour ajouter d'autres objets :
     std::cout << "added canon" << std::endl;
