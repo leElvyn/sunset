@@ -22,6 +22,8 @@ set(SOURCES
         src/tinygltf.h
         src/animations.cpp
         src/animations.h
+        src/timeline.cpp
+        src/timeline.h
 )
 
 # Header files (optional, for IDEs)
