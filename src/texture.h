@@ -16,6 +16,6 @@
 unsigned int loadCubemap(std::vector<std::string> faces);
 GLuint uploadTexture(const tinygltf::Image& img, int samplerIdx, const tinygltf::Model& model);
 
-void extractTextures(const tinygltf::Primitive& prim, const tinygltf::Model& model);
+GLuint extractTextures(const tinygltf::Primitive& prim, const tinygltf::Model& model);
 
 #endif //SUNSET_TEXTURE_H

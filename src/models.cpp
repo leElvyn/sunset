@@ -10,6 +10,38 @@
 
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))
 
+std::ostream& operator<<(std::ostream& os, const tinygltf::Accessor& acc) {
+    static const std::unordered_map<int, std::string> compTypes = {
+        { TINYGLTF_COMPONENT_TYPE_BYTE,           "BYTE"            },
+        { TINYGLTF_COMPONENT_TYPE_UNSIGNED_BYTE,  "UNSIGNED_BYTE"   },
+        { TINYGLTF_COMPONENT_TYPE_SHORT,          "SHORT"           },
+        { TINYGLTF_COMPONENT_TYPE_UNSIGNED_SHORT, "UNSIGNED_SHORT"  },
+        { TINYGLTF_COMPONENT_TYPE_INT,            "INT"             },
+        { TINYGLTF_COMPONENT_TYPE_UNSIGNED_INT,   "UNSIGNED_INT"    },
+        { TINYGLTF_COMPONENT_TYPE_FLOAT,          "FLOAT"           },
+    };
+    static const std::unordered_map<int, std::string> types = {
+        { TINYGLTF_TYPE_SCALAR, "SCALAR" },
+        { TINYGLTF_TYPE_VEC2,   "VEC2"   },
+        { TINYGLTF_TYPE_VEC3,   "VEC3"   },
+        { TINYGLTF_TYPE_VEC4,   "VEC4"   },
+        { TINYGLTF_TYPE_MAT2,   "MAT2"   },
+        { TINYGLTF_TYPE_MAT3,   "MAT3"   },
+        { TINYGLTF_TYPE_MAT4,   "MAT4"   },
+    };
+
+    auto compStr = compTypes.count(acc.componentType) ? compTypes.at(acc.componentType) : "UNKNOWN";
+    auto typeStr = types.count(acc.type)              ? types.at(acc.type)              : "UNKNOWN";
+
+    os << "Accessor["
+       << " name: \""  << acc.name << "\""
+       << " type: "    << typeStr  << "<" << compStr << ">"
+       << " count: "   << acc.count
+       << " bufView: " << acc.bufferView
+       << " offset: "  << acc.byteOffset
+       << " ]";
+    return os;
+}
 
 bool loadModel(tinygltf::Model &model, const char *filename) {
     tinygltf::TinyGLTF loader;
@@ -46,6 +78,7 @@ GLPrimitive bindPrimitive(
     // Upload all buffer views
     std::unordered_map<int, GLuint> gpuBuffers;
 
+    std::cout << model.bufferViews.size() << std::endl;
     for (size_t i = 0; i < model.bufferViews.size(); ++i) {
         const auto& bufferView = model.bufferViews[i];
 
@@ -93,6 +126,10 @@ GLPrimitive bindPrimitive(
             location = 1;
         else if (attrib.first == "TEXCOORD_0")
             location = 2;
+        else if (attrib.first == "JOINTS_0")
+            location = 3;
+        else if (attrib.first == "WEIGHTS_0")
+            location = 4;
 
         if (location < 0)
             continue;
@@ -107,16 +144,30 @@ GLPrimitive bindPrimitive(
 
         glEnableVertexAttribArray(location);
 
-        glVertexAttribPointer(
-            location,
-            componentCount,
-            accessor.componentType,
-            accessor.normalized,
-            stride,
-            reinterpret_cast<void*>(
-                accessor.byteOffset
-            )
-        );
+        if (accessor.componentType == GL_UNSIGNED_BYTE) {
+
+            glVertexAttribIPointer(
+                location,
+                componentCount,
+                accessor.componentType,
+                stride,
+                reinterpret_cast<void*>(
+                    accessor.byteOffset
+                )
+            );
+        }
+        else {
+            glVertexAttribPointer(
+                location,
+                componentCount,
+                accessor.componentType,
+                accessor.normalized,
+                stride,
+                reinterpret_cast<void*>(
+                    accessor.byteOffset
+                )
+            );
+        }
     }
 
     // Index buffer
@@ -143,7 +194,7 @@ GLPrimitive bindPrimitive(
         );
     }
 
-    extractTextures(primitive, model);
+    result.texture = extractTextures(primitive, model);
 
     glBindVertexArray(0);
 
@@ -196,6 +247,8 @@ void drawModel(const GLModel& model)
     for (const auto& primitive
          : model.primitives)
     {
+        glBindTexture(GL_TEXTURE_2D, primitive.texture);
+
         glBindVertexArray(primitive.vao);
 
         glDrawElements(

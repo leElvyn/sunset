@@ -15,5 +15,7 @@ in vec2 tex_coord;
 void main() {
     float light_intensity = clamp((dot(vertex_normal, normalize(light_dir))), 0, 1);
     output_color = texture(texture_sampler, tex_coord);
+    if (output_color.a < 0.1)
+        discard;          // fragment is thrown away entirely
 //    output_color = vec4(1, 0,0,1);
 }

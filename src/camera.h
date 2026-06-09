@@ -72,9 +72,9 @@ public:
         glm::mat4 Projection =
             glm::perspective(glm::radians(this->fov), (float)w / (float)h, 0.01f, 1000000.0f);
 
-        glm::mat4 mvp = Projection * get_view_matrix();
+        glm::mat4 vp = Projection * get_view_matrix();
 
-        return mvp;
+        return vp;
     }
 
     // processes input received from any keyboard-like input system. Accepts input parameter in the form of camera defined ENUM (to abstract it from windowing systems)

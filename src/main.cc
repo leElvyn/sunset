@@ -9,6 +9,7 @@
 #include <string>
 #include <stdio.h>
 
+#include "animations.h"
 #include "camera.h"
 #include "inputs.h"
 #include "models.h"
@@ -48,10 +49,12 @@ void init_gl() {
     glDisable(GL_CULL_FACE);
     glEnable(GL_DEPTH_TEST);
     // glPolygonMode( GL_FRONT_AND_BACK, GL_LINE );
+    glEnable(GL_BLEND);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 }
 
 struct Uniforms {
-    GLint mvp, color, light_position, res;
+    GLint mvp, color, light_position, res, joint_matrices;
 };
 
 Uniforms init_uniforms(GLuint prog) {
@@ -62,6 +65,8 @@ Uniforms init_uniforms(GLuint prog) {
     u.color = glGetUniformLocation(prog, "u_color");
     u.light_position = glGetUniformLocation(prog, "u_light_position");
     u.res = glGetUniformLocation(prog, "u_res");
+    u.joint_matrices = glGetUniformLocation(prog, "u_joint_matrices");
+    std::cout <<  glGetUniformLocation(prog, "texture_sampler") << std::endl;
     return u;
 }
 
@@ -109,9 +114,11 @@ void render_loop(GLFWwindow *win,
     double time = glfwGetTime();
 
     tinygltf::Model model;
-    if (!loadModel(model, "res/models/cannon/canon.gltf")) return;
+    if (!loadModel(model, "res/models/zelda/Untitled.gltf")) return;
+
 
     GLModel gl_model = bindModel(model);
+    auto anim = parse_animations(model);
 
     // std::pair<GLuint, GLuint> cylinderBuffer = init_object();
 
@@ -138,6 +145,7 @@ void render_loop(GLFWwindow *win,
 
         processInput(win, camera, delta);
         update_camera(camera, u, w, h);
+        process_animations(model, anim[4], time, u.joint_matrices);
 
     }
 }

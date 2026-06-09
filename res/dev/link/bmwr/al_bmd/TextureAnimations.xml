@@ -1,0 +1,73 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% al_skirt
+#
+% al_pants
+#
+% al_lowbody
+#
+% al_inner
+#
+% al_hand
+#
+% al_gauntletL
+#
+% al_belts
+#
+% t_earring_S3TC_test
+#
+% al_ear
+#
+% al_boots
+#
+% al_armL
+</Textures>
+
+	<Materials>
+#
+% al_armL_m
+#
+% al_armR_m
+#
+% al_arm_m
+#
+% al_bag_m
+#
+% al_beltS_m
+#
+% al_beltW_m
+#
+% al_boots_m
+#
+% al_ear_m
+#
+% al_earring_m
+#
+% al_eri_m
+#
+% al_gauntletL_m
+#
+% al_handLA_m
+#
+% al_handRA_m
+#
+% al_inner_m
+#
+% al_lowbody_m
+#
+% al_pants_m
+#
+% al_skirt_m
+#
+% al_upbody_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

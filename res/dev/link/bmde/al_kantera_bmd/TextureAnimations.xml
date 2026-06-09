@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+</Textures>
+
+	<Materials>
+#
+% al_kt_body2_m
+#
+% al_kt_body_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -18,6 +18,7 @@ struct GLPrimitive {
     GLsizei indexCount = 0;
     GLenum indexType = GL_UNSIGNED_INT;
     GLenum drawMode = GL_TRIANGLES;
+    GLuint texture = 0;
 
     std::vector<GLuint> buffers; // owns all VBO/EBOs
 };

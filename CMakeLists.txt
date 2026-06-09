@@ -20,6 +20,8 @@ set(SOURCES
         src/objects.cpp
         src/tinygltf.cpp
         src/tinygltf.h
+        src/animations.cpp
+        src/animations.h
 )
 
 # Header files (optional, for IDEs)

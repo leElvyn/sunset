@@ -1,0 +1,14 @@
+# ninja log v7
+2	1062	1780833044655733618	CMakeFiles/main.dir/src/objects.cpp.o	4f8028858747d975
+1	2263	1780833044655353321	CMakeFiles/main.dir/src/inputs.cpp.o	bc1324535ebe3240
+1	2428	1780833044655262222	CMakeFiles/main.dir/src/camera.cpp.o	2f41a075e2d5d279
+1	2883	1780833044655536352	CMakeFiles/main.dir/src/scene.cpp.o	f49cda8aa3a3db8
+1	2900	1780833044655441241	CMakeFiles/main.dir/src/texture.cpp.o	e242e9dbb7447a5c
+1	3381	1780833044654008177	CMakeFiles/main.dir/ext/glad/src/glad.c.o	b8cf357ce22be909
+2264	3682	1780833046917246539	CMakeFiles/main.dir/src/shaders.cpp.o	dd9773e05acd61f1
+1	5491	1780833044655635425	CMakeFiles/main.dir/src/models.cpp.o	fc3cdaeadd6a79f1
+1063	5651	1780833045716857777	CMakeFiles/main.dir/src/bmd/bmd_gl.cpp.o	e79ebe21f298f389
+1	6760	1780833044655163271	CMakeFiles/main.dir/src/main.cc.o	3156a1b9fd0eb868
+5	8414	1780833044658591487	CMakeFiles/main.dir/src/bmd/bmd.cpp.o	a96f8e85190d041c
+2	28626	1780833044655862078	CMakeFiles/main.dir/src/tinygltf.cpp.o	d215ee0b05689031
+28626	28784	1780833073279527640	main	cded4c48c23fb013

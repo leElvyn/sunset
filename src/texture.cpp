@@ -34,8 +34,8 @@ unsigned int loadCubemap(std::vector<std::string> faces) {
 
     return textureID;
 }
-void extractTextures(const tinygltf::Primitive& prim, const tinygltf::Model& model) {
-    if (prim.material < 0) return; // primitive has no material
+GLuint extractTextures(const tinygltf::Primitive& prim, const tinygltf::Model& model) {
+    if (prim.material < 0) return -1; // primitive has no material
     const tinygltf::Material& mat = model.materials[prim.material];
 
     // 2. Access PBR textures
@@ -44,13 +44,15 @@ void extractTextures(const tinygltf::Primitive& prim, const tinygltf::Model& mod
         const tinygltf::Texture& tex = model.textures[pbr.baseColorTexture.index];
         const tinygltf::Image&   img = model.images[tex.source];
 
+        for (int i = 3; i < img.image.size(); i+=4) {
+        }
         // img.image    → std::vector<unsigned char>, raw RGBA pixels
         // img.width    → int
         // img.height   → int
         // img.component → int (number of channels, usually 4)
         // img.bits     → int (bits per channel, usually 8)
 
-        uploadTexture(img, tex.sampler, model); // see below
+        return uploadTexture(img, tex.sampler, model); // see below
     }
 
 }
