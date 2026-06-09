@@ -30,6 +30,10 @@ void Scene::draw(glm::mat4 view_projection, glm::vec3 light_pos, float time) {
 
         glUseProgram(prog->prog_id);
 
+        Animation* anim_a = nullptr;
+        Animation* anim_b = nullptr;
+        float time_a = time, time_b = 0.0f, blend = 0.0f;
+
         GLint vp_loc    = glGetUniformLocation(prog->prog_id, "u_view_projection");
         GLint light_loc = glGetUniformLocation(prog->prog_id, "u_light_position");
         GLint mm_loc    = glGetUniformLocation(prog->prog_id, "u_model_matrix");
@@ -52,7 +56,17 @@ void Scene::draw(glm::mat4 view_projection, glm::vec3 light_pos, float time) {
                     blend  = eval.blend;
                 }
             }
-            process_animations(obj.raw_model, anim, time, jm_loc);
+            std::vector<AnimLayer> layers;
+            for (auto& tl : obj.extra_layers) {
+              auto ev = tl.evaluate(obj.animations, time);
+              if (ev.anim_index >= 0 && ev.anim_index < (int)obj.animations.size())
+                layers.push_back({&obj.animations[ev.anim_index], ev.local_time});
+            }
+            process_animations(obj.raw_model,
+                anim_a, time_a,
+                anim_b, time_b, blend,
+                layers,
+                jm_loc);
         }
 
         drawModel(obj.gl_model);
