@@ -37,7 +37,7 @@ void main() {
     float ambient = 0.4;
 
     float shadow = shadow_factor();
-    vec3 ambient_color = vec3(1.0, 0.40, 0.15);
+    vec3 ambient_color = vec3(1.0, 0.80, 0.45);
     vec3 light = ambient * ambient_color + (1.0 - ambient) * diffuse * u_light_color * shadow;
 
     vec4 tex_color = texture(texture_sampler, tex_coord);
