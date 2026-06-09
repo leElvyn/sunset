@@ -1,0 +1,49 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% hs_eye
+#
+% hs_eye.1
+#
+% hs_eye.2
+#
+% hs_eye.3
+#
+% hs_hair
+#
+% hs_tail
+#
+% hs_body
+#
+% hs_tail
+#
+% hs_hair
+#
+% hs_eye
+#
+% hs_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye_m
+#
+% eye_m
+#
+% hair_m
+#
+% head_m
+#
+% nuki_m
+#
+% z_nimotu_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>
