@@ -110,30 +110,27 @@ std::pair<GLuint, GLuint> init_object() {
 }
 // --- Main loop ---
 
-static const glm::vec3 LIGHT_POS(0.0f, -20000.0f, 0.0f);
+static const glm::vec3 LIGHT_DIR = glm::normalize(glm::vec3(-2.0f, 0.6f, 1.0f)); // low grazing angle from the right
+static const glm::vec3 LIGHT_COLOR(1.0f, 0.55f, 0.15f); // warm orange
 
 void render_loop(GLFWwindow *win,
                  const Uniforms &u, Camera &camera,
-                 program* skinned_prog, program* static_prog) {
+                 program* skinned_prog, program* static_prog,
+                 program* flare_prog) {
     double time = glfwGetTime();
 
     Scene scene;
     scene.skinned_prog = skinned_prog;
     scene.static_prog  = static_prog;
-    //scene.add_object("res/models/zelda/Untitled.gltf",
-    //                 glm::translate(glm::mat4(1.0f), glm::vec3(75.0f, 0.0f, 0.0f)), 2);
-    scene.add_object("res/models/zelda/Untitled.gltf",
+    scene.init_lens_flare(flare_prog);
+    scene.add_object("res/models/stage/Untitled.gltf",
+                     glm::translate(glm::mat4(1.0f), glm::vec3(75.0f, 0.0f, 0.0f)), 2);
+    scene.add_object("res/models/Horse/Epona.gltf",
                      glm::mat4(1.0f), 4);
     // Remplacer la timeline par défaut par une séquence personnalisée
-    scene.objects[0].extra_layers.push_back(
-      Timeline{}.then(0, -1.0f, true)  // loop anim 0 independently
-    );
-    scene.objects[0].extra_layers.push_back(
-      Timeline{}.then(4, -1.0f, true)  // loop anim 0 independently
-    );
-
-    // Pour ajouter d'autres objets :
-    std::cout << "added canon" << std::endl;
+    // scene.objects[0].extra_layers.push_back(
+    //   Timeline{}.then(0, -1.0f, true)  // loop anim 0 independently
+    // );
 
     while (!glfwWindowShouldClose(win)) {
         double new_time = glfwGetTime();
@@ -151,7 +148,7 @@ void render_loop(GLFWwindow *win,
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        scene.draw(camera.get_mvp((float)w, (float)h), LIGHT_POS, (float)time);
+        scene.draw(camera.get_mvp((float)w, (float)h), LIGHT_DIR, LIGHT_COLOR, (float)time);
 
         glfwSwapBuffers(win);
 
@@ -167,6 +164,7 @@ int main() {
 
     program* skinned_prog = program::make_program("shaders/vertex.glsl",        "shaders/frag.glsl");
     program* static_prog  = program::make_program("shaders/vertex_static.glsl", "shaders/frag.glsl");
+    program* flare_prog   = program::make_program("shaders/lens_flare.vert",    "shaders/lens_flare.frag");
 
     std::cout << skinned_prog->get_log();
     skinned_prog->use();
@@ -178,7 +176,7 @@ int main() {
 
     glfwSetWindowUserPointer(win, &camera);
 
-    render_loop(win, u, camera, skinned_prog, static_prog);
+    render_loop(win, u, camera, skinned_prog, static_prog, flare_prog);
 }
 
 const char* __asan_default_options() { return "detect_leaks=0"; }

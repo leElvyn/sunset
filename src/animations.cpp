@@ -171,7 +171,7 @@ static void apply_animation_layer(
 
         if (channel.path == "rotation") {
             glm::quat q = glm::normalize(glm::quat(val.w, val.x, val.y, val.z));
-            if (glm::abs(glm::dot(q, rt.rotation)) > 0.9999f) continue;
+            if (glm::abs(glm::dot(q, rt.rotation)) > 0.f) continue;
             nt.rotation = q;
         } else if (channel.path == "translation") {
             glm::vec3 t = glm::vec3(val);
