@@ -17,6 +17,7 @@
 #include "shaders.h"
 #include "texture.h"
 #include "scene.h"
+#include "stb.h"
 
 
 // ── Main ──────────────────────────────────────────────────────────────────────
@@ -125,12 +126,30 @@ void render_loop(GLFWwindow *win,
     scene.init_lens_flare(flare_prog);
     scene.add_object("res/models/stage/Untitled.gltf",
                      glm::translate(glm::mat4(1.0f), glm::vec3(75.0f, 0.0f, 0.0f)), 2);
-    scene.add_object("res/models/Horse/Epona.gltf",
-                     glm::mat4(1.0f), 4);
+    int horse_obj = scene.add_object("res/models/Horse/Epona.gltf",
+                     glm::mat4(1.0f), 4)
+                        ? (int)scene.objects.size() - 1 : -1;
     // Remplacer la timeline par défaut par une séquence personnalisée
     // scene.objects[0].extra_layers.push_back(
     //   Timeline{}.then(0, -1.0f, true)  // loop anim 0 independently
     // );
+
+    // ── Cutscene STB (intro Twilight Princess : Epona sur la plaine) ─────────
+    Cutscene cutscene;
+    bool cs_ok = cutscene.load("res/demo38_01.stb");
+    CutsceneActor* cs_horse = nullptr;
+    if (cs_ok) {
+        cutscene.loop = false;
+        // cutscene.world = glm::scale(glm::mat4(1.0f), glm::vec3(0.01f));
+        // si l'échelle de la scène diffère des unités TP
+
+        // Les index d'animation du STB sont ceux des BCK du jeu ; les
+        // remapper ici vers les index glTF d'Epona si besoin :
+        // cutscene.remap_animations("Horse", {{4, 0}, {5, 1}, {9, 2}});
+        cs_horse = cutscene.find("Horse");
+        if (cs_horse && horse_obj >= 0 && !cs_horse->timeline.clips.empty())
+            scene.objects[horse_obj].timeline = cs_horse->timeline;
+    }
 
     while (!glfwWindowShouldClose(win)) {
         double new_time = glfwGetTime();
@@ -148,7 +167,17 @@ void render_loop(GLFWwindow *win,
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        scene.draw(camera.get_mvp((float)w, (float)h), LIGHT_DIR, LIGHT_COLOR, (float)time);
+        // Transforms pilotés par la cutscene, tant qu'elle joue
+        if (cs_horse && horse_obj >= 0)
+            scene.objects[horse_obj].model_matrix =
+                cutscene.actor_transform(*cs_horse, cutscene.local_time((float)time));
+
+        // Caméra cutscene si active, sinon caméra libre
+        glm::mat4 vp;
+        if (!(cs_ok && cutscene.camera_view_projection((float)time, (float)w / (float)h, vp)))
+            vp = camera.get_mvp((float)w, (float)h);
+
+        scene.draw(vp, LIGHT_DIR, LIGHT_COLOR, (float)time);
 
         glfwSwapBuffers(win);
 

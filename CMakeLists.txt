@@ -24,6 +24,8 @@ set(SOURCES
         src/animations.h
         src/timeline.cpp
         src/timeline.h
+        src/stb.cpp
+        src/stb.h
 )
 
 # Header files (optional, for IDEs)
