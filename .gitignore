@@ -12,3 +12,5 @@ compile_commands.json
 .vscode
 .idea
 build/
+.claude
+.cache
