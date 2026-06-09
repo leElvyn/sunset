@@ -54,18 +54,19 @@ void init_gl() {
 }
 
 struct Uniforms {
-    GLint mvp, color, light_position, res, joint_matrices;
+    GLint view_projection, color, light_position, res, joint_matrices, model_matrix;
 };
 
 Uniforms init_uniforms(GLuint prog) {
     glUseProgram(prog);
     Uniforms u;
 
-    u.mvp = glGetUniformLocation(prog, "u_mvp");
+    u.view_projection = glGetUniformLocation(prog, "u_view_projection");
     u.color = glGetUniformLocation(prog, "u_color");
     u.light_position = glGetUniformLocation(prog, "u_light_position");
     u.res = glGetUniformLocation(prog, "u_res");
     u.joint_matrices = glGetUniformLocation(prog, "u_joint_matrices");
+    u.model_matrix = glGetUniformLocation(prog, "u_model_matrix");
     std::cout <<  glGetUniformLocation(prog, "texture_sampler") << std::endl;
     return u;
 }
@@ -80,7 +81,7 @@ Camera init_camera(GLFWwindow *win, const Uniforms &u) {
 }
 
 void update_camera(Camera& camera, Uniforms u, float w, float h) {
-    glUniformMatrix4fv(u.mvp,1, false, glm::value_ptr(camera.get_mvp(w, h)));
+    glUniformMatrix4fv(u.view_projection, 1, false, glm::value_ptr(camera.get_mvp(w, h)));
 }
 
 GLsizei arrays_size = 0;

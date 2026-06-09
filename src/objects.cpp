@@ -1,3 +1,4 @@
+#pragma once
 //
 // Created by red on 5/28/26.
 //

@@ -9,7 +9,8 @@ layout (location = 4) in vec4 aWeights;
 
 
 uniform vec3 u_color;
-uniform mat4 u_mvp;
+uniform mat4 u_view_projection;
+uniform mat4 u_model_matrix;
 uniform vec3 u_light_position;
 uniform mat4 u_joint_matrices[64];
 
@@ -26,7 +27,7 @@ void main() {
         + aWeights.z * u_joint_matrices[aJoints.z]
         + aWeights.w * u_joint_matrices[aJoints.w];
 
-    vec4 vertex_pos = u_mvp * skinMatrix * vec4(aPosition, 1.0);
+    vec4 vertex_pos = u_view_projection * u_model_matrix * skinMatrix * vec4(aPosition, 1.0);
     vertex_position = vertex_pos;
 
     tex_coord = aTexcoord;

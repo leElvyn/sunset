@@ -1,0 +1,14 @@
+/target
+main
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+out.ppm
+*.out
+target/
+Makefile
+compile_commands.json
+.cmake
+.vscode
+.idea
+build/

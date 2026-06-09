@@ -6,8 +6,11 @@
 #define TP2_OBJECTS_H
 #include <vector>
 #include <glm/vec3.hpp>
+#include <glm/mat4x4.hpp>
 #include <glm/ext/scalar_constants.hpp>
 #include <glm/trigonometric.hpp>
+#include "animations.h"
+#include "models.h"
 
 struct vertex {
     glm::vec3 position;
@@ -20,7 +23,10 @@ struct triangle {
     vertex v3;
 };
 
-class objects {
+struct Object {
+    GLModel model;
+    Animation animation;
+    glm::mat4 model_matrix = glm::mat4(1.0f);
 };
 
 class Cylinder {

@@ -157,9 +157,6 @@ void process_animations(tinygltf::Model model, Animation& animation, float time_
         jointMatrices[i] = globalMatrices[jointNode] * ibms[i];
     }
 
-    for (auto &mat : jointMatrices) {
-        std::cout << mat << std::endl;
-    }
     // Upload to shader
     glUniformMatrix4fv(uniforms, jointMatrices.size(), GL_FALSE,
                        glm::value_ptr(jointMatrices[0]));
