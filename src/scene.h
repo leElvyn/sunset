@@ -1,15 +1,16 @@
 #pragma once
 
-#include <format>
-#include <string>
 #include <vector>
-#include <glm/vec3.hpp>
-
+#include <glm/mat4x4.hpp>
 #include "glad/glad.h"
+#include "objects.h"
 
-// ########## Scene data #############
+struct Scene {
+    std::vector<Object> objects;
 
+    bool add_object(const char* path,
+                    glm::mat4 transform = glm::mat4(1.0f),
+                    int anim_index = 0);
 
-void uploadScene(GLuint ssbos[]);
-
-void updateUniforms(GLuint uNumSpheres, GLuint uNumLights);
+    void draw(GLint model_matrix_loc, GLint joint_matrices_loc, float time);
+};

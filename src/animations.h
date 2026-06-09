@@ -39,7 +39,7 @@ struct Animation {
     float duration;
 };
 
-void process_animations(tinygltf::Model model, Animation& animation, float time_t, GLint uniforms);
+void process_animations(const tinygltf::Model& model, Animation* animation, float time_t, GLint uniforms);
 std::vector<Animation> parse_animations(const tinygltf::Model& model);
 
 #endif //BLACKRAY_ANIMATIONS_H

@@ -120,19 +120,32 @@ void compute_global_transforms(const tinygltf::Model& model,
 
 
 
-void process_animations(tinygltf::Model model, Animation& animation, float time_t, GLint uniforms) {
-    float animTime = fmod(time_t, animation.duration);
-
+void process_animations(const tinygltf::Model& model, Animation* animation, float time_t, GLint uniforms) {
+    if (model.skins.empty()) return;
 
     std::vector<NodeTransform> nodeTransforms(model.nodes.size());
 
-    for (auto& channel : animation.channels) {
-        glm::vec4 val = sample_channel(channel.sampler, animTime, channel.path);
-        NodeTransform& nt = nodeTransforms[channel.nodeIndex];
+    for (size_t i = 0; i < model.nodes.size(); i++) {
+        auto& node = model.nodes[i];
+        auto& nt   = nodeTransforms[i];
+        if (!node.translation.empty())
+            nt.translation = {(float)node.translation[0], (float)node.translation[1], (float)node.translation[2]};
+        if (!node.rotation.empty())
+            nt.rotation = glm::quat((float)node.rotation[3], (float)node.rotation[0], (float)node.rotation[1], (float)node.rotation[2]);
+        if (!node.scale.empty())
+            nt.scale = {(float)node.scale[0], (float)node.scale[1], (float)node.scale[2]};
+    }
 
-        if      (channel.path == "translation") nt.translation = glm::vec3(val);
-        else if (channel.path == "scale")       nt.scale       = glm::vec3(val);
-        else if (channel.path == "rotation")    nt.rotation    = glm::quat(val.w, val.x, val.y, val.z);
+    if (animation) {
+        float animTime = fmod(time_t, animation->duration);
+        for (auto& channel : animation->channels) {
+            glm::vec4 val = sample_channel(channel.sampler, animTime, channel.path);
+            NodeTransform& nt = nodeTransforms[channel.nodeIndex];
+
+            if      (channel.path == "translation") nt.translation = glm::vec3(val);
+            else if (channel.path == "scale")       nt.scale       = glm::vec3(val);
+            else if (channel.path == "rotation")    nt.rotation    = glm::quat(val.w, val.x, val.y, val.z);
+        }
     }
 
     std::vector<glm::mat4> globalMatrices(model.nodes.size(), glm::mat4(1.0f));
@@ -148,7 +161,7 @@ void process_animations(tinygltf::Model model, Animation& animation, float time_
     auto& inputView = model.bufferViews[inputAcc.bufferView];
     auto& inputBuf  = model.buffers[inputView.buffer];
 
-    const glm::mat4* ibms = reinterpret_cast<glm::mat4*>(
+    const glm::mat4* ibms = reinterpret_cast<const glm::mat4*>(
         inputBuf.data.data() + inputView.byteOffset + inputAcc.byteOffset);;
 
 

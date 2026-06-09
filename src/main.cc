@@ -114,14 +114,14 @@ void render_loop(GLFWwindow *win,
                  const Uniforms &u, Camera &camera) {
     double time = glfwGetTime();
 
-    tinygltf::Model model;
-    if (!loadModel(model, "res/models/zelda/Untitled.gltf")) return;
+    Scene scene;
+    //scene.add_object("res/models/zelda/Untitled.gltf",
+    //                 glm::translate(glm::mat4(1.0f), glm::vec3(75.0f, 0.0f, 0.0f)), 2);
+    scene.add_object("res/models/stage/Untitled.gltf",
+                     glm::mat4(1.0f), 0);
 
-
-    GLModel gl_model = bindModel(model);
-    auto anim = parse_animations(model);
-
-    // std::pair<GLuint, GLuint> cylinderBuffer = init_object();
+    // Pour ajouter d'autres objets :
+    std::cout << "added canon" << std::endl;
 
     while (!glfwWindowShouldClose(win)) {
         double new_time = glfwGetTime();
@@ -139,15 +139,12 @@ void render_loop(GLFWwindow *win,
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+        scene.draw(u.model_matrix, u.joint_matrices, (float)time);
 
-        drawModel(gl_model);
-        // glDrawArrays(GL_TRIANGLES, 0, arrays_size);
         glfwSwapBuffers(win);
 
         processInput(win, camera, delta);
         update_camera(camera, u, w, h);
-        process_animations(model, anim[4], time, u.joint_matrices);
-
     }
 }
 
