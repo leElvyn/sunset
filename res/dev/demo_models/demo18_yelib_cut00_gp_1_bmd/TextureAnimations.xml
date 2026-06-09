@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% yelB_r
+</Textures>
+
+	<Materials>
+#
+% yelB_r_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

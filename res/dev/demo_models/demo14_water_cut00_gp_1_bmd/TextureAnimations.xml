@@ -1,0 +1,37 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% monyou01
+#
+% zl2_indwp00
+#
+% circle
+#
+% uzumaki
+#
+% M_IsekiRock_Mask
+#
+% M_SiroToKuro
+#
+% rockGlad
+</Textures>
+
+	<Materials>
+#
+% ef_rockKabuse_v_x
+#
+% ef_water00_v
+#
+% ef_water01_v
+#
+% ef_zkiwa_v_x
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

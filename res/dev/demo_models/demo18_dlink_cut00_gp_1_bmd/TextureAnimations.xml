@@ -1,0 +1,139 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% albk_bag
+#
+% albk_belt
+#
+% albk_boots
+#
+% albk_cap
+#
+% albk_ear
+#
+% albk_eri
+#
+% albk_eye.1
+#
+% albk_eye.2
+#
+% albk_eye.3
+#
+% albk_eye.4
+#
+% albk_eye.5
+#
+% albk_eye.6
+#
+% albk_eye.7
+#
+% albk_face
+#
+% albk_gauntletL
+#
+% albk_hair
+#
+% albk_hand
+#
+% albk_inner
+#
+% albk_lowbody
+#
+% albk_pants
+#
+% albk_upbody
+#
+% t_albk_earring_S3TC_test
+#
+% albk_upbody
+#
+% albk_pants
+#
+% albk_lowbody
+#
+% albk_inner
+#
+% albk_hand
+#
+% albk_hair
+#
+% albk_gauntletL
+#
+% albk_face
+#
+% albk_eye.1
+#
+% albk_eri
+#
+% t_albk_earring_S3TC_test
+#
+% albk_ear
+#
+% albk_cap
+#
+% albk_boots
+#
+% albk_belt
+#
+% albk_bag
+#
+% albk_armL
+</Textures>
+
+	<Materials>
+#
+% al_armL_m
+#
+% al_armR_m
+#
+% al_bag_m
+#
+% al_beltS_m
+#
+% al_beltW_m
+#
+% al_boots_m
+#
+% al_cap_m
+#
+% al_ear_m
+#
+% al_earring_m
+#
+% al_eri_m
+#
+% al_eyeL_m
+#
+% al_eyeR_m
+#
+% al_eyeballL_m
+#
+% al_eyeballR_m
+#
+% al_face_m
+#
+% al_gauntletL_m
+#
+% al_hair_m
+#
+% al_handLA_m
+#
+% al_handRA_m
+#
+% al_inner_m
+#
+% al_lowbody_m
+#
+% al_pants_m
+#
+% al_upbody_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

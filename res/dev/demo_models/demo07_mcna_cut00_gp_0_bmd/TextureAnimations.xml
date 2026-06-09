@@ -1,0 +1,29 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% MCN_a2_eye.1
+#
+% MCN_a2_eye.2
+#
+% MCN_a2_eye.3
+#
+% MCN_a2_eye.1
+#
+% MCN_a2_body
+</Textures>
+
+	<Materials>
+#
+% MCN_a2__m
+#
+% SC_eye
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -1,0 +1,39 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% F_nami_LS
+#
+% F_env
+#
+% fbtex_dummy
+#
+% mizu1
+</Textures>
+
+	<Materials>
+#
+% aa_MA02_demo34taki
+#
+% mizubasira
+#
+% mizubasira(2)
+#
+% mizubasira(3)
+#
+% mizubasira(4)
+#
+% mizubasira(5)
+#
+% mizubasira(6)
+#
+% mizubasira(7)
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

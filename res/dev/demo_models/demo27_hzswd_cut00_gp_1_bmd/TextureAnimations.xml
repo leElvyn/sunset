@@ -1,0 +1,21 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% Hz_sword
+</Textures>
+
+	<Materials>
+#
+% Hz_sword_ha
+#
+% Hz_sword_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

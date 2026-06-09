@@ -1,0 +1,21 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% chair_body
+</Textures>
+
+	<Materials>
+#
+% face
+#
+% face_cut
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

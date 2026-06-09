@@ -1,0 +1,57 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% ash_eye.1
+#
+% ash_eye.2
+#
+% ash_eye.3
+#
+% ash_eye.4
+#
+% ash_eye.5
+#
+% ash_eye.6
+#
+% ash_eyeball
+#
+% ash_face
+#
+% ash_sword
+#
+% ash_sword
+#
+% ash_face
+#
+% ash_eyeball
+#
+% ash_Hilight
+#
+% ash_shade
+#
+% ash_body
+#
+% ash_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% ash_body_m
+#
+% ash_eyeball_m
+#
+% ash_face_m
+#
+% ash_sword_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% midona_mask
+</Textures>
+
+	<Materials>
+#
+% md_mask_m_v
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

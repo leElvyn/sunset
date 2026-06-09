@@ -1,0 +1,57 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% kkri_eye.1
+#
+% kkri_eye.2
+#
+% kkri_eye.3
+#
+% kkri_eye.4
+#
+% kkri_eye.5
+#
+% kkri_eye.6
+#
+% kkri_eyeball
+#
+% kkri_face
+#
+% kkri_tubo
+#
+% kkri_tubo
+#
+% kkri_face
+#
+% kkri_eyeball
+#
+% kkri_eye_Hilight
+#
+% kkri_eye_shade
+#
+% kkri_body
+#
+% kkri_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% kkri_body_m
+#
+% kkri_eyeball_m
+#
+% kkri_face_m
+#
+% kkri_tubo_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

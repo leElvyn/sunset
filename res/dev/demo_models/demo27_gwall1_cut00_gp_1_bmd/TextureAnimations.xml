@@ -1,0 +1,39 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% glad8x128i8
+#
+% testGlad14
+</Textures>
+
+	<Materials>
+#
+% bb_normal_gndW
+#
+% cc_MA17_gndW
+#
+% cc_MA17_gndW(2)
+#
+% cc_MA17_gndW(3)
+#
+% cc_MA17_gndW(4)
+#
+% cc_MA17_gndW(5)
+#
+% bb_normal_gndW(2)
+#
+% bb_normal_gndW(3)
+#
+% bb_normal_gndW(4)
+#
+% bb_normal_gndW(5)
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -1,0 +1,63 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% midona_mask_front_BM_1
+#
+% midona_mask_front_line_BM
+#
+% midona_mask_clown_BM_1
+#
+% midona_mask_clown_line_BM
+#
+% midona_mask_back_BM_1
+#
+% midona_mask_back_line_BM
+#
+% midona_mask_line_BM
+#
+% midona_spear_BM
+#
+% midona_hair_root_BM
+#
+% midona_moya_BM
+#
+% midona_hair_BM
+#
+% midona_hair_tip_BM
+#
+% midona_hair_light_BM
+#
+% midona_hair_maru
+</Textures>
+
+	<Materials>
+#
+% hair_hand_BM_m
+#
+% hair_root_BM_m
+#
+% md_core_BM_m_v_x
+#
+% md_mask_BM_m
+#
+% md_mask_back_BM_m
+#
+% md_mask_back_phase_BM_m
+#
+% md_mask_clown_BM_m
+#
+% md_mask_front_BM_m
+#
+% md_mask_front_phase_BM_m
+#
+% md_mask_phase_BM_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

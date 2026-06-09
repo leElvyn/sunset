@@ -1,0 +1,37 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% SOL_SW
+#
+% SOL_grip
+#
+% SOL_saya
+#
+% sol_SHE
+</Textures>
+
+	<Materials>
+#
+% She_sol_SHE00
+#
+% Sol_SW_sol_grip_m
+#
+% solA_model_gim_fix_solA_body_m
+#
+% solA_model_gim_fix_solA_helmet_m
+#
+% sol_grip_m
+#
+% sol_saya_m
+#
+% sol_sw_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

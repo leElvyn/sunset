@@ -1,0 +1,51 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% ykW_eye.1
+#
+% ykW_eye.2
+#
+% ykW_eye.3
+#
+% ykW_eye.4
+#
+% ykW_eye.5
+#
+% ykW_eye.6
+#
+% ykW_eyeball
+#
+% ykW_face
+#
+% ykW_face
+#
+% ykW_eyeball
+#
+% ykW_Hilight
+#
+% ykW_shade
+#
+% ykW_body
+#
+% ykW_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% ykW_body_m
+#
+% ykW_eyeball
+#
+% ykW_face_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

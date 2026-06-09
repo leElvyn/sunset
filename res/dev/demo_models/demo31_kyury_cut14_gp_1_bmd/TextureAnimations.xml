@@ -1,0 +1,51 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% kyury_eye.1
+#
+% kyury_eye.2
+#
+% kyury_eye.3
+#
+% kyury_eye.4
+#
+% kyury_eye.5
+#
+% kyury_eye.6
+#
+% kyury_eyeball
+#
+% kyury_face
+#
+% kyury_face
+#
+% kyury_eyeball
+#
+% kyury_eye_Hilight
+#
+% kyury_eye_shade
+#
+% kyury_body
+#
+% kyury_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% kyury_body_m
+#
+% kyury_eyeball
+#
+% kyury_face_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

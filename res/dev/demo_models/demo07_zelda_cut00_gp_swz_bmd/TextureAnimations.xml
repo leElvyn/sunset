@@ -1,0 +1,69 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% zelda
+#
+% zelda_eye.1
+#
+% zelda_eye.2
+#
+% zelda_eye.3
+#
+% zelda_eye.4
+#
+% zelda_eye.5
+#
+% zelda_eye.6
+#
+% zelda_eyeball
+#
+% zelda_hair
+#
+% zelda
+#
+% zelda_hair_SPenv
+#
+% zelda_hair
+#
+% zelda_hair_SPmap
+#
+% zelda_eyeball
+#
+% zelda_eye_Hlight
+#
+% zelda_eye_Shadow
+#
+% zelda_eye.1
+#
+% SWZ_00
+</Textures>
+
+	<Materials>
+#
+% SC_eye_L_v
+#
+% SC_eye_R_v
+#
+% zelda_SWZ_model_v_SWZ_00
+#
+% zelda_body_m_v
+#
+% zelda_doubleside_m_v
+#
+% zelda_eyeball_L_v
+#
+% zelda_eyeball_R_v
+#
+% zelda_hair_m_v
+#
+% zelda_jewel_m_v
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -1,0 +1,23 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% mark
+</Textures>
+
+	<Materials>
+#
+% eye
+#
+% yamimark_mat
+#
+% ym_body
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

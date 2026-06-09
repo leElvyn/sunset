@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+</Textures>
+
+	<Materials>
+#
+% solA_body_m
+#
+% solA_helmet_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

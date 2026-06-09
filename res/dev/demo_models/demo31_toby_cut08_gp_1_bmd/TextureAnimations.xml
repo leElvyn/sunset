@@ -1,0 +1,51 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% toby_eye.1
+#
+% toby_eye.2
+#
+% toby_eye.3
+#
+% toby_eye.4
+#
+% toby_eye.5
+#
+% toby_eye.6
+#
+% toby_eyeball
+#
+% toby_face
+#
+% toby_face
+#
+% toby_eyeball
+#
+% toby_eye_Hilight
+#
+% toby_eye_shade
+#
+% toby_body
+#
+% toby_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% toby_body_m
+#
+% toby_eyeball_m
+#
+% toby_face_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

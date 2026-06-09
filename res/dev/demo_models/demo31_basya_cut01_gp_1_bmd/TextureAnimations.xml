@@ -1,0 +1,41 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% hu_body
+#
+% hu_eye
+#
+% bs_body
+#
+% bs_body
+#
+% bg_body
+#
+% hu_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye_m
+#
+% bg_body_m
+#
+% bs_body_m
+#
+% curtain_m
+#
+% eye_m
+#
+% head_m
+#
+% nuki_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

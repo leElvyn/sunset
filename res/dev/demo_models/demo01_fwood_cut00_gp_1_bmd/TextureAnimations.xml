@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% D_firewood
+</Textures>
+
+	<Materials>
+#
+% D_firewood_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

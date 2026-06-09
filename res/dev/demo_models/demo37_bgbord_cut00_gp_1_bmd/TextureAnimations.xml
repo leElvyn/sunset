@@ -1,0 +1,23 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% d3701_01_bg
+</Textures>
+
+	<Materials>
+#
+% bgboard_1
+#
+% bgboard_2
+#
+% bgboard_3
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

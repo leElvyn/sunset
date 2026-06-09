@@ -1,0 +1,317 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% gnwMoyou128ia8_02
+#
+% testGlad14
+#
+% circle10
+</Textures>
+
+	<Materials>
+#
+% hakai_Dummy_v_x
+#
+% hakai_Dummy_v_x(2)
+#
+% hakai_Dummy_v_x(3)
+#
+% hakai_Dummy_v_x(4)
+#
+% hakai_Dummy_v_x(5)
+#
+% hakai_Dummy_v_x(6)
+#
+% hakai_Dummy_v_x(7)
+#
+% hakai_Dummy_v_x(8)
+#
+% hakai_Dummy_v_x(9)
+#
+% hakai_Dummy_v_x(10)
+#
+% hakai_Dummy_v_x(11)
+#
+% hakai_Dummy_v_x(12)
+#
+% hakai_Dummy_v_x(13)
+#
+% hakai_Dummy_v_x(14)
+#
+% hakai_Dummy_v_x(15)
+#
+% hakai_Dummy_v_x(16)
+#
+% hakai_Dummy_v_x(17)
+#
+% hakai_Dummy_v_x(18)
+#
+% hakai_Dummy_v_x(19)
+#
+% hakai_Dummy_v_x(20)
+#
+% hakai_Dummy_v_x(21)
+#
+% hakai_Dummy_v_x(22)
+#
+% hakai_Dummy_v_x(23)
+#
+% hakai_Dummy_v_x(24)
+#
+% hakai_Dummy_v_x(25)
+#
+% hakai_Dummy_v_x(26)
+#
+% hakai_Dummy_v_x(27)
+#
+% hakai_Dummy_v_x(28)
+#
+% hakai_Dummy_v_x(29)
+#
+% hakai_Dummy_v_x(30)
+#
+% hakai_Dummy_v_x(31)
+#
+% hakai_Dummy_v_x(32)
+#
+% hakai_Dummy_v_x(33)
+#
+% hakai_Dummy_v_x(34)
+#
+% hakai_Dummy_v_x(35)
+#
+% hakai_Dummy_v_x(36)
+#
+% hakai_Dummy_v_x(37)
+#
+% hakai_Dummy_v_x(38)
+#
+% hakai_Dummy_v_x(39)
+#
+% hakai_Dummy_v_x(40)
+#
+% hakai_Dummy_v_x(41)
+#
+% hakai_Dummy_v_x(42)
+#
+% hakai_Dummy_v_x(43)
+#
+% hakai_Dummy_v_x(44)
+#
+% hakai_Dummy_v_x(45)
+#
+% hakai_Dummy_v_x(46)
+#
+% hakai_Dummy_v_x(47)
+#
+% hakai_Dummy_v_x(48)
+#
+% hakai_Dummy_v_x(49)
+#
+% hakai_Dummy_v_x(50)
+#
+% hakai_Dummy_v_x(51)
+#
+% hakai_Dummy_v_x(52)
+#
+% hakai_Dummy_v_x(53)
+#
+% hakai_Dummy_v_x(54)
+#
+% hakai_Dummy_v_x(55)
+#
+% hakai_Dummy_v_x(56)
+#
+% hakai_Dummy_v_x(57)
+#
+% hakai_Dummy_v_x(58)
+#
+% hakai_Dummy_v_x(59)
+#
+% hakai_Dummy_v_x(60)
+#
+% hakai_Dummy_v_x(61)
+#
+% hakai_Dummy_v_x(62)
+#
+% hakai_Dummy_v_x(63)
+#
+% hakai_Dummy_v_x(64)
+#
+% hakai_Dummy_v_x(65)
+#
+% hakai_Dummy_v_x(66)
+#
+% hakai_Dummy_v_x(67)
+#
+% hakai_Dummy_v_x(68)
+#
+% hakai_Dummy_v_x(69)
+#
+% hakai_Dummy_v_x(70)
+#
+% hakai_Dummy_v_x(71)
+#
+% hakai_Dummy_v_x(72)
+#
+% hakai_Dummy_v_x(73)
+#
+% hakai_Dummy_v_x(74)
+#
+% hakai_Dummy_v_x(75)
+#
+% hakai_Dummy_v_x(76)
+#
+% hakai_Dummy_v_x(77)
+#
+% hakai_Dummy_v_x(78)
+#
+% hakai_Dummy_v_x(79)
+#
+% hakai_Dummy_v_x(80)
+#
+% hakai_Dummy_v_x(81)
+#
+% hakai_Dummy_v_x(82)
+#
+% hakai_Dummy_v_x(83)
+#
+% hakai_Dummy_v_x(84)
+#
+% hakai_Dummy_v_x(85)
+#
+% hakai_Dummy_v_x(86)
+#
+% hakai_Dummy_v_x(87)
+#
+% hakai_Dummy_v_x(88)
+#
+% hakai_Dummy_v_x(89)
+#
+% hakai_Dummy_v_x(90)
+#
+% hakai_Dummy_v_x(91)
+#
+% hakai_Dummy_v_x(92)
+#
+% hakai_Dummy_v_x(93)
+#
+% hakai_Dummy_v_x(94)
+#
+% hakai_Dummy_v_x(95)
+#
+% hakai_Dummy_v_x(96)
+#
+% hakai_Dummy_v_x(97)
+#
+% hakai_Dummy_v_x(98)
+#
+% hakai_Dummy_v_x(99)
+#
+% hakai_Dummy_v_x(100)
+#
+% hakai_Dummy_v_x(101)
+#
+% hakai_Dummy_v_x(102)
+#
+% hakai_Dummy_v_x(103)
+#
+% hakai_Dummy_v_x(104)
+#
+% hakai_Dummy_v_x(105)
+#
+% hakai_Dummy_v_x(106)
+#
+% hakai_Dummy_v_x(107)
+#
+% hakai_Dummy_v_x(108)
+#
+% hakai_Dummy_v_x(109)
+#
+% hakai_Dummy_v_x(110)
+#
+% hakai_Dummy_v_x(111)
+#
+% hakai_Dummy_v_x(112)
+#
+% hakai_Dummy_v_x(113)
+#
+% hakai_Dummy_v_x(114)
+#
+% hakai_Dummy_v_x(115)
+#
+% hakai_Dummy_v_x(116)
+#
+% hakai_Dummy_v_x(117)
+#
+% hakai_Dummy_v_x(118)
+#
+% hakai_Dummy_v_x(119)
+#
+% hakai_Dummy_v_x(120)
+#
+% hakai_Dummy_v_x(121)
+#
+% hakai_Dummy_v_x(122)
+#
+% hakai_Dummy_v_x(123)
+#
+% hakai_Dummy_v_x(124)
+#
+% hakai_Dummy_v_x(125)
+#
+% hakai_Dummy_v_x(126)
+#
+% hakai_Dummy_v_x(127)
+#
+% hakai_Dummy_v_x(128)
+#
+% hakai_Dummy_v_x(129)
+#
+% hakai_Dummy_v_x(130)
+#
+% hakai_Dummy_v_x(131)
+#
+% hakai_Dummy_v_x(132)
+#
+% hakai_Dummy_v_x(133)
+#
+% hakai_Dummy_v_x(134)
+#
+% hakai_Dummy_v_x(135)
+#
+% hakai_Dummy_v_x(136)
+#
+% hakai_Dummy_v_x(137)
+#
+% hakai_Dummy_v_x(138)
+#
+% hakai_Dummy_v_x(139)
+#
+% hakai_Dummy_v_x(140)
+#
+% hakai_Dummy_v_x(141)
+#
+% hakai_Dummy_v_x(142)
+#
+% hakai_Dummy_v_x(143)
+#
+% hakai_Dummy_v_x(144)
+#
+% hakai_Dummy_v_x(145)
+#
+% hakai_Dummy_v_x(146)
+#
+% hakai_Dummy_v_x(147)
+#
+% hakai_Dummy_v_x(148)
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

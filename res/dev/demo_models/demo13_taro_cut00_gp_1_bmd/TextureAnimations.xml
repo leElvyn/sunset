@@ -1,0 +1,49 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% demo13_taro_eye.2
+#
+% demo13_taro_eye.3
+#
+% demo13_taro_eye.4
+#
+% demo13_taro_eye.5
+#
+% demo13_taro_eye.6
+#
+% taro_body
+#
+% taro_eyeball
+#
+% taro_face
+#
+% taro_face
+#
+% taro_eyeball
+#
+% taro_eye_Hlight
+#
+% taro_body
+#
+% demo13_taro_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% taro_body_m
+#
+% taro_eyeball_m
+#
+% taro_face_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

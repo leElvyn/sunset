@@ -1,0 +1,49 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% maro_eye.1
+#
+% maro_eye.2
+#
+% maro_eye.3
+#
+% maro_eye.4
+#
+% maro_eye.5
+#
+% maro_eye.6
+#
+% maro_eyeball
+#
+% maro_face
+#
+% maro_body
+#
+% maro_face
+#
+% maro_eyeball
+#
+% maro_eye_Hlight
+#
+% maro_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% maro_eyeball
+#
+% maro_face_m
+#
+% maro_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

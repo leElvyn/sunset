@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% ball_mura2
+</Textures>
+
+	<Materials>
+#
+% blackball_mura_t
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

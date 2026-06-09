@@ -1,0 +1,47 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% rdD_tex
+#
+% rdD_ya
+#
+% wbD_body
+#
+% wbD_eye
+#
+% wbD_eye
+#
+% wbD_body
+#
+% rdD_tex
+#
+% rdD_eye
+#
+% rdD_ya
+</Textures>
+
+	<Materials>
+#
+% rdD_arrow_bow
+#
+% rdD_eye
+#
+% rdD_skin
+#
+% rdD_suso
+#
+% wbD_bagu
+#
+% wbD_body
+#
+% wbD_eye
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

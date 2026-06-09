@@ -1,0 +1,21 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% solA_r_64
+</Textures>
+
+	<Materials>
+#
+% solA_r_SW_SHE_model_pose_solA_r_m
+#
+% solA_r_SW_SHE_model_pose_sol_SHE_r_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

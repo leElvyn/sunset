@@ -70,7 +70,7 @@ public:
 
     glm::mat4 get_mvp(float w, float h) {
         glm::mat4 Projection =
-            glm::perspective(glm::radians(this->fov), (float)w / (float)h, 0.01f, 1000000.0f);
+            glm::perspective(glm::radians(this->fov), (float)w / (float)h, 1.0f, 100000.0f);
 
         glm::mat4 vp = Projection * get_view_matrix();
 

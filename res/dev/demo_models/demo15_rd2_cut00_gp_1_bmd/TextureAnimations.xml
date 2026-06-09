@@ -1,0 +1,45 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% rdD_club
+#
+% rdD_eye
+#
+% rdD_tex
+#
+% rdD_ya
+#
+% rdD_tex
+#
+% rdD_eye
+#
+% rdD_bow_yumi
+#
+% rdD_ya
+#
+% rdD_club
+</Textures>
+
+	<Materials>
+#
+% rdD_arrow_bow
+#
+% rdD_bow_yumi
+#
+% rdD_club
+#
+% rdD_eye
+#
+% rdD_skin
+#
+% rdD_suso
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

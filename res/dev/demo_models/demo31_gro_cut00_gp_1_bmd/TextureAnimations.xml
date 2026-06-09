@@ -1,0 +1,45 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% grO_a_eye.1
+#
+% grO_a_eye.2
+#
+% grO_a_eye.3
+#
+% grO_a_eyeball
+#
+% grO_face
+#
+% grO_a_body
+#
+% grO_face
+#
+% grO_a_eyeball
+#
+% grO_a_eye_Hilight
+#
+% grO_a_eye_shade
+#
+% grO_a_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% grO_a_eyeball
+#
+% grO_a_face_m
+#
+% grO_a_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -1,0 +1,31 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% M_Noise128x32
+#
+% M_KuroHai
+</Textures>
+
+	<Materials>
+#
+% cb_Back_Inside_v_x
+#
+% cb_Back_v_x
+#
+% cc_Gomi_v_x
+#
+% cc_ShiroBack_v_x
+#
+% cd_KasanGomi_v_x
+#
+% cf_KuroFogOn_v_x
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

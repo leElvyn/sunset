@@ -1,0 +1,43 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% bow_ya
+#
+% rd_eye
+#
+% wb_body
+</Textures>
+
+	<Materials>
+#
+% bagu
+#
+% eye
+#
+% kura
+#
+% rd_Rrun_demo_eye
+#
+% rd_arrow_rd_bow_1
+#
+% rd_skin
+#
+% rd_suso
+#
+% rd_Rrun_demo_eye(2)
+#
+% rd_arrow_rd_bow_1(2)
+#
+% rd_skin(2)
+#
+% rd_suso(2)
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

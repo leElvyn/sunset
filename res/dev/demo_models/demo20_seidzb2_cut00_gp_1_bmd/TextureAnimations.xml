@@ -1,0 +1,41 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% seiD_body
+#
+% seiD_mizo1
+#
+% seiD_mizo2
+#
+% seiD_hikari
+#
+% hikari_patarn_64_I4
+#
+% hikari_patarn_64_I4
+#
+% seiD_bero64
+</Textures>
+
+	<Materials>
+#
+% seiD_bero_m
+#
+% seiD_body_m
+#
+% seiD_circle_m
+#
+% seiD_face_m
+#
+% seiD_sippo_m
+#
+% seiD_sizuku_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

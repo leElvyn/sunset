@@ -1,0 +1,23 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% al_SWA
+#
+% hilight01
+</Textures>
+
+	<Materials>
+#
+% al_SWA_m
+#
+% al_SWgripA_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

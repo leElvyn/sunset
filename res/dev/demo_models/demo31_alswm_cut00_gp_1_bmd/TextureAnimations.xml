@@ -1,0 +1,35 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% al_SWgripM
+#
+% env_edge
+#
+% env_edge
+#
+% al_SWgripM
+#
+% env
+#
+% al_SWM
+#
+% env
+</Textures>
+
+	<Materials>
+#
+% al_SWM_m
+#
+% al_SWgripM_m
+#
+% al_SWlightM_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

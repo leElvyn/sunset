@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% WCN_a_l_body
+</Textures>
+
+	<Materials>
+#
+% WCN_a_l_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

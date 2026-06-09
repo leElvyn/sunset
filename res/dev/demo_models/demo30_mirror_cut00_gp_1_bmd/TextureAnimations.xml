@@ -1,0 +1,27 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% mirrer_ura06
+#
+% test04
+#
+% mip_32p
+</Textures>
+
+	<Materials>
+#
+% aa_mirrer_v
+#
+% hh_mirrer_v_x
+#
+% ii_uturikomi_v
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

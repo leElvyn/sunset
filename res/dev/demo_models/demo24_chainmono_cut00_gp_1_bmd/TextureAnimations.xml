@@ -1,0 +1,29 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% H_merimeri
+#
+% U_mono_isi4_2
+#
+% bangle_01
+#
+% H_merimeri
+</Textures>
+
+	<Materials>
+#
+% aa_bangle_v_x
+#
+% aa_kkuyouseki_v
+#
+% bb_kusari_v_x
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

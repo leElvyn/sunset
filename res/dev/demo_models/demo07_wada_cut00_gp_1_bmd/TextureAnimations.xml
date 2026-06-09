@@ -1,0 +1,29 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% WAD_a2_eye.1
+#
+% WAD_a2_eye.2
+#
+% WAD_a2_eye.3
+#
+% WAD_a2_body
+#
+% WAD_a2_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% WAD_a2_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

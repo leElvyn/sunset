@@ -1,0 +1,45 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% bou_eye.1
+#
+% bou_eye.2
+#
+% bou_eye.3
+#
+% bou_eye.4
+#
+% bou_eye.5
+#
+% bou_eye.6
+#
+% bou_eyeball
+#
+% bou_body_asa
+#
+% bou_eyeball
+#
+% bou_eye_Hlight
+#
+% bou_eye_shade
+#
+% bou_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% bou_eyeball
+#
+% bou_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

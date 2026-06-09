@@ -1,0 +1,51 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% uri_eye.1
+#
+% uri_eye.2
+#
+% uri_eye.3
+#
+% uri_eye.4
+#
+% uri_eye.5
+#
+% uri_eye.6
+#
+% uri_eyeball_asa
+#
+% uri_face
+#
+% uri_face
+#
+% uri_eyeball_asa
+#
+% uri_eye_Hlight
+#
+% uri_eye_shade
+#
+% uri_body
+#
+% uri_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% uri_body_m
+#
+% uri_eyeball
+#
+% uri_face_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

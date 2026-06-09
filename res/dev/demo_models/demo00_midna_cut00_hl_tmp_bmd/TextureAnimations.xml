@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% midona_hand
+</Textures>
+
+	<Materials>
+#
+% md_handLA_m_v_Hi
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -1,0 +1,51 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% hanjo_eye.1
+#
+% hanjo_eye.2
+#
+% hanjo_eye.3
+#
+% hanjo_eye.4
+#
+% hanjo_eye.5
+#
+% hanjo_eye.6
+#
+% hanjo_eyeball
+#
+% hanjo_face
+#
+% hanjo_face
+#
+% hanjo_eyeball
+#
+% hanjo_eye_Hlight
+#
+% hanjo_eye_shade
+#
+% hanjo_body
+#
+% hanjo_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% hanjo_body_m
+#
+% hanjo_eyeball
+#
+% hanjo_face_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

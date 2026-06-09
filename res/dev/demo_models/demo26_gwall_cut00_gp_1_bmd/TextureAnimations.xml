@@ -1,0 +1,29 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% gnwMoyou128ia8_02
+#
+% testGlad14
+#
+% circle10
+</Textures>
+
+	<Materials>
+#
+% mat00
+#
+% mat01
+#
+% mat02
+#
+% mat03
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

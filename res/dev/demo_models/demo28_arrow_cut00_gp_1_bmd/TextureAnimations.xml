@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% O_zD_arow01
+</Textures>
+
+	<Materials>
+#
+% O_zD_arow_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

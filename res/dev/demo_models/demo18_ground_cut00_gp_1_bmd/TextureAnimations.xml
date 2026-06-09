@@ -1,0 +1,47 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% F_etc_ha08
+#
+% F_h_hanayuka
+#
+% F_iz_kabe13
+#
+% demo18_01_cut07_ground_eff
+#
+% demo18_01_cut07_ground_eff_warp
+#
+% F_iz_kabe13
+#
+% demo18_01_cut07_ground_eff
+#
+% demo18_01_cut07_ground_eff_warp
+#
+% F_h_hanayuka
+#
+% F11_ha
+#
+% F_etc_ha08
+</Textures>
+
+	<Materials>
+#
+% Demo_HaiLakeSeirei_R01_060302a_aa_ha04_v
+#
+% Demo_HaiLakeSeirei_R01_060302a_bb_ha03_v
+#
+% Demo_HaiLakeSeirei_R01_060302a_bb_hanayuka_v
+#
+% aa_box_yuka02_v_x
+#
+% aa_box_yuka03_v
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

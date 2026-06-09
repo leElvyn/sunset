@@ -1,0 +1,29 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% MAN_c_eye.1
+#
+% MAN_c_eye.2
+#
+% MAN_c_eye.3
+#
+% MAN_c_eye.1
+#
+% MAN_c_body
+</Textures>
+
+	<Materials>
+#
+% MAN_c_m
+#
+% SC_eye
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

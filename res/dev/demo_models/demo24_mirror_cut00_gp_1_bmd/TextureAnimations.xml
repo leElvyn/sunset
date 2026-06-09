@@ -1,0 +1,29 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% test04
+#
+% mip_16p
+#
+% kageri_mirrer_C
+</Textures>
+
+	<Materials>
+#
+% mirrer_C_m_v
+#
+% mirrer_S_C_m_v_x
+#
+% mirrer_phase_C_m_v
+#
+% mirrer_uturikomi_C_m_v
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

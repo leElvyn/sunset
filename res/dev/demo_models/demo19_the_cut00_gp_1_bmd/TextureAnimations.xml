@@ -1,0 +1,71 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% the_eye.1
+#
+% the_eye.2
+#
+% the_eye.3
+#
+% the_eye.4
+#
+% the_eye.5
+#
+% the_eye.6
+#
+% the_eye.7
+#
+% the_eyeball
+#
+% the_face.1
+#
+% the_face.2
+#
+% the_face.3
+#
+% the_face.4
+#
+% the_face.5
+#
+% the_face.6
+#
+% the_hand
+#
+% the_hand
+#
+% the_face.1
+#
+% the_body
+#
+% the_eyeball
+#
+% the_eye_Hilight
+#
+% the_eye_shade
+#
+% the_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye_L
+#
+% SC_eye_R
+#
+% eyeball
+#
+% the_body_m
+#
+% the_face_m
+#
+% the_hand_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

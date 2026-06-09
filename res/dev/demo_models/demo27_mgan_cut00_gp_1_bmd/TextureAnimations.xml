@@ -1,0 +1,29 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% mgn_eye
+#
+% mgn_core
+#
+% mgn_head
+</Textures>
+
+	<Materials>
+#
+% magn_head
+#
+% mgn_core
+#
+% mgn_eye
+#
+% mgn_mat
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

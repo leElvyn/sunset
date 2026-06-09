@@ -1,0 +1,23 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% U_mirrer12
+</Textures>
+
+	<Materials>
+#
+% aa_mirrer_v
+#
+% hh_mirrer_v_x
+#
+% ii_uturikomi_v_x
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

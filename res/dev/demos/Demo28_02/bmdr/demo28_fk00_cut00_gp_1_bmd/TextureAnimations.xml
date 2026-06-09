@@ -1,0 +1,17 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+</Textures>
+
+	<Materials>
+#
+% fk_body_v_x
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

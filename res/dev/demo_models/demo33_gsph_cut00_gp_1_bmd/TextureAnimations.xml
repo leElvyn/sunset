@@ -1,0 +1,25 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% noiseSmk
+#
+% wave8inv
+#
+% ganonFire3
+</Textures>
+
+	<Materials>
+#
+% FX_GSphereM01
+#
+% FX_GSphereM01(2)
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -1,0 +1,21 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% midona_hair_tip_bousou
+#
+% midona_hair_light
+</Textures>
+
+	<Materials>
+#
+% md_hair_bousou_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

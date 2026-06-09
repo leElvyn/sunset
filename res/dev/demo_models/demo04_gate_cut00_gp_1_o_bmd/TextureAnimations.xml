@@ -1,0 +1,21 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% E_Obj01_ToaruMori_R01
+</Textures>
+
+	<Materials>
+#
+% bb_Object01_v
+#
+% bb_Object02_v
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

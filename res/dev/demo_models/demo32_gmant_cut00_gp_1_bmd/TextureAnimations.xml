@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% gnd_mant
+</Textures>
+
+	<Materials>
+#
+% gnd_mant2_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

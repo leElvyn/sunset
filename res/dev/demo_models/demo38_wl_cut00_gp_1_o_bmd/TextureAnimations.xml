@@ -1,0 +1,61 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% wl_ea‚’ring
+#
+% wl_eye.1
+#
+% wl_eye.2
+#
+% wl_eye.3
+#
+% wl_eye.4
+#
+% wl_eye.5
+#
+% wl_eyeball
+#
+% wl_kusari_bond
+#
+% wl_body
+#
+% wl_kusari_bond
+#
+% wl_eyeball
+#
+% wl_eye_Hilight
+#
+% wl_eye_kage
+#
+% wl_eye.1
+#
+% wl_ea‚’ring
+</Textures>
+
+	<Materials>
+#
+% wl_body_m
+#
+% wl_earring_m
+#
+% wl_eyeL_m
+#
+% wl_eyeR_m
+#
+% wl_eyeballL_m
+#
+% wl_eyeballR_m
+#
+% wl_legbond_m
+#
+% wl_tooth_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

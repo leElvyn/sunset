@@ -1,0 +1,71 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% bb_body
+#
+% Rb_body
+#
+% Rb_eye
+#
+% Rb_armor
+</Textures>
+
+	<Materials>
+#
+% Rb_body
+#
+% Rb_double
+#
+% Rb_eye
+#
+% Rb_lHorn
+#
+% Rb_rHorn
+#
+% armor_mat
+#
+% bb_LHorn
+#
+% bb_RHorn
+#
+% bb_bagu
+#
+% bb_body
+#
+% bb_eye
+#
+% armor_mat(2)
+#
+% armor_mat(3)
+#
+% armor_mat(4)
+#
+% armor_mat(5)
+#
+% armor_mat(6)
+#
+% armor_mat(7)
+#
+% armor_mat(8)
+#
+% armor_mat(9)
+#
+% armor_mat(10)
+#
+% armor_mat(11)
+#
+% armor_mat(12)
+#
+% armor_mat(13)
+#
+% armor_mat(14)
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

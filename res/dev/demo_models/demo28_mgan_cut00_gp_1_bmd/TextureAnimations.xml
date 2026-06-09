@@ -1,0 +1,35 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% warp_tex
+#
+% mgn_head
+#
+% gnd_SPenv
+#
+% mgn_eye
+#
+% mgn_core
+</Textures>
+
+	<Materials>
+#
+% magn_head
+#
+% mgn_core
+#
+% mgn_eye
+#
+% mgn_jewel
+#
+% mgn_mat
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

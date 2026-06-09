@@ -1,0 +1,25 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% bl_hair
+#
+% bl_hair
+#
+% al_hair
+</Textures>
+
+	<Materials>
+#
+% Blink_base_E3_bl_hair_m
+#
+% Blink_base_E3_bl_hair_m2
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

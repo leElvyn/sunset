@@ -1,0 +1,29 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% WGN_a_eye.1
+#
+% WGN_a_eye.2
+#
+% WGN_a_eye.3
+#
+% WGN_a_body
+#
+% WGN_a_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% WGN_a_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

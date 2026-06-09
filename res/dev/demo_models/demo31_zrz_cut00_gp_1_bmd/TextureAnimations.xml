@@ -1,0 +1,53 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% zrZ_eye.1
+#
+% zrZ_eye.2
+#
+% zrZ_eye.3
+#
+% zrZ_eye.4
+#
+% zrZ_eye.5
+#
+% zrZ_eye.6
+#
+% zrZ_eyeball
+#
+% zrZ_face
+#
+% zrZ_body
+#
+% zrZ_face
+#
+% zrZ_eyeball
+#
+% zrZ_eye_Hlight
+#
+% zrZ_eye_Shadow
+#
+% zrZ_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% eyeball
+#
+% zrZ_body_m
+#
+% zrZ_face_m
+#
+% zrZ_mark_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

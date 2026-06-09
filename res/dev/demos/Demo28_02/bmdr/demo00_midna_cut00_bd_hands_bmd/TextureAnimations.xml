@@ -1,0 +1,25 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% midona_line01
+</Textures>
+
+	<Materials>
+#
+% md_handLB_m_v_v
+#
+% md_handLC_m_v_v
+#
+% md_handRB_m_v_v
+#
+% md_handRC_m_v_v
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

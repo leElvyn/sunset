@@ -1,0 +1,31 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% al_insideM_s3tc
+#
+% al_teeth_s3tc
+#
+% al_teeth_s3tc
+#
+% al_insideM_s3tc
+#
+% al_face_060928
+</Textures>
+
+	<Materials>
+#
+% al_face_m
+#
+% al_insideM_m
+#
+% al_teeth_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

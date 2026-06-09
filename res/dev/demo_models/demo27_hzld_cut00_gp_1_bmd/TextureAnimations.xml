@@ -1,0 +1,73 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% Hzelda_2
+#
+% Hzelda_eye.1
+#
+% Hzelda_eye.2
+#
+% Hzelda_eye.3
+#
+% Hzelda_eye.4
+#
+% Hzelda_eye.5
+#
+% Hzelda_eye.6
+#
+% Hzelda_eyeball
+#
+% Hzelda_hair
+#
+% Hzelda_2
+#
+% Hzelda_hair_SPenv
+#
+% Hzelda_hair
+#
+% Hzelda_hair_SPmap
+#
+% Hzelda_eyeball
+#
+% Hzelda_eye_Hlight
+#
+% Hzelda_eye_Shadow
+#
+% Hzelda_eyeball2
+#
+% Hzelda
+#
+% Hzelda_eye.1
+#
+% Hzelda_EYEchange
+</Textures>
+
+	<Materials>
+#
+% SC_eye_L_v
+#
+% SC_eye_R_v
+#
+% h_zelda_hada_m_v
+#
+% zelda_body_m_v
+#
+% zelda_doubleside_m_v
+#
+% zelda_eyeball_L_v
+#
+% zelda_eyeball_R_v
+#
+% zelda_hair_m_v
+#
+% zelda_jewel_m_v
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

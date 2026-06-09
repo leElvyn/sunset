@@ -1,0 +1,23 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% L_gD_Hutu02
+#
+% L_gD_Hutu
+</Textures>
+
+	<Materials>
+#
+% O_Hutu_m00_v
+#
+% O_Hutu_m01_v
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

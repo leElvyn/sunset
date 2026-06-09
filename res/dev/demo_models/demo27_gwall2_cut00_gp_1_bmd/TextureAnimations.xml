@@ -1,0 +1,107 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% glad8x128i8
+#
+% testGlad14
+</Textures>
+
+	<Materials>
+#
+% bb_normal_gndW
+#
+% cc_MA17_gndW
+#
+% cc_MA17_gndW(2)
+#
+% cc_MA17_gndW(3)
+#
+% cc_MA17_gndW(4)
+#
+% cc_MA17_gndW(5)
+#
+% cc_MA17_gndW(6)
+#
+% cc_MA17_gndW(7)
+#
+% cc_MA17_gndW(8)
+#
+% cc_MA17_gndW(9)
+#
+% cc_MA17_gndW(10)
+#
+% cc_MA17_gndW(11)
+#
+% cc_MA17_gndW(12)
+#
+% cc_MA17_gndW(13)
+#
+% cc_MA17_gndW(14)
+#
+% cc_MA17_gndW(15)
+#
+% cc_MA17_gndW(16)
+#
+% cc_MA17_gndW(17)
+#
+% cc_MA17_gndW(18)
+#
+% cc_MA17_gndW(19)
+#
+% cc_MA17_gndW(20)
+#
+% cc_MA17_gndW(21)
+#
+% cc_MA17_gndW(22)
+#
+% bb_normal_gndW(2)
+#
+% bb_normal_gndW(3)
+#
+% bb_normal_gndW(4)
+#
+% bb_normal_gndW(5)
+#
+% bb_normal_gndW(6)
+#
+% bb_normal_gndW(7)
+#
+% bb_normal_gndW(8)
+#
+% bb_normal_gndW(9)
+#
+% bb_normal_gndW(10)
+#
+% bb_normal_gndW(11)
+#
+% bb_normal_gndW(12)
+#
+% bb_normal_gndW(13)
+#
+% bb_normal_gndW(14)
+#
+% bb_normal_gndW(15)
+#
+% bb_normal_gndW(16)
+#
+% bb_normal_gndW(17)
+#
+% bb_normal_gndW(18)
+#
+% bb_normal_gndW(19)
+#
+% bb_normal_gndW(20)
+#
+% bb_normal_gndW(21)
+#
+% bb_normal_gndW(22)
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

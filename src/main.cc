@@ -110,11 +110,16 @@ std::pair<GLuint, GLuint> init_object() {
 }
 // --- Main loop ---
 
+static const glm::vec3 LIGHT_POS(0.0f, -20000.0f, 0.0f);
+
 void render_loop(GLFWwindow *win,
-                 const Uniforms &u, Camera &camera) {
+                 const Uniforms &u, Camera &camera,
+                 program* skinned_prog, program* static_prog) {
     double time = glfwGetTime();
 
     Scene scene;
+    scene.skinned_prog = skinned_prog;
+    scene.static_prog  = static_prog;
     //scene.add_object("res/models/zelda/Untitled.gltf",
     //                 glm::translate(glm::mat4(1.0f), glm::vec3(75.0f, 0.0f, 0.0f)), 2);
     scene.add_object("res/models/stage/Untitled.gltf",
@@ -139,12 +144,11 @@ void render_loop(GLFWwindow *win,
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
-        scene.draw(u.model_matrix, u.joint_matrices, (float)time);
+        scene.draw(camera.get_mvp((float)w, (float)h), LIGHT_POS, (float)time);
 
         glfwSwapBuffers(win);
 
         processInput(win, camera, delta);
-        update_camera(camera, u, w, h);
     }
 }
 
@@ -153,19 +157,21 @@ void render_loop(GLFWwindow *win,
 int main() {
     GLFWwindow *win = init_glfw();
     init_gl();
-    program* prog = program::make_program("shaders/vertex.glsl", "shaders/frag.glsl");
 
-    std::cout << prog->get_log();
-    prog->use();
+    program* skinned_prog = program::make_program("shaders/vertex.glsl",        "shaders/frag.glsl");
+    program* static_prog  = program::make_program("shaders/vertex_static.glsl", "shaders/frag.glsl");
 
-    Uniforms u = init_uniforms(prog->prog_id);
+    std::cout << skinned_prog->get_log();
+    skinned_prog->use();
+
+    Uniforms u = init_uniforms(skinned_prog->prog_id);
     set_uniforms(u);
 
     Camera camera = init_camera(win, u);
 
     glfwSetWindowUserPointer(win, &camera);
 
-    render_loop(win, u, camera);
+    render_loop(win, u, camera, skinned_prog, static_prog);
 }
 
 const char* __asan_default_options() { return "detect_leaks=0"; }

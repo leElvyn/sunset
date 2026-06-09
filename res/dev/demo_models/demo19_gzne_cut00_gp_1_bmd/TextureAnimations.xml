@@ -1,0 +1,39 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% gz_ne_eye.1
+#
+% gz_ne_eye.2
+#
+% gz_ne_eye.3
+#
+% gz_ne_eyeball
+#
+% gz_ne
+#
+% gz_ne_eyeball
+#
+% gz_ne_eye_Hilight
+#
+% gz_ne_eye_shade
+#
+% gz_ne_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% eyeball_m
+#
+% gz_ne_model_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% rdD_bow_ya
+</Textures>
+
+	<Materials>
+#
+% rdD_bow_ya
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

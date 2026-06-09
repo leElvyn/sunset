@@ -20,19 +20,31 @@ bool Scene::add_object(const char* path, glm::mat4 transform, int anim_index) {
     return true;
 }
 
-void Scene::draw(GLint model_matrix_loc, GLint joint_matrices_loc, float time) {
+void Scene::draw(glm::mat4 view_projection, glm::vec3 light_pos, float time) {
     for (auto& obj : objects) {
-        glUniformMatrix4fv(model_matrix_loc, 1, GL_FALSE,
-                           glm::value_ptr(obj.model_matrix));
+        bool skinned = !obj.raw_model.skins.empty();
+        program* prog = skinned ? skinned_prog : static_prog;
+        if (!prog) continue;
 
-        if (!obj.raw_model.skins.empty()) {
+        glUseProgram(prog->prog_id);
+
+        GLint vp_loc    = glGetUniformLocation(prog->prog_id, "u_view_projection");
+        GLint light_loc = glGetUniformLocation(prog->prog_id, "u_light_position");
+        GLint mm_loc    = glGetUniformLocation(prog->prog_id, "u_model_matrix");
+
+        glUniformMatrix4fv(vp_loc, 1, GL_FALSE, glm::value_ptr(view_projection));
+        glUniform3fv(light_loc, 1, glm::value_ptr(light_pos));
+        glUniformMatrix4fv(mm_loc, 1, GL_FALSE, glm::value_ptr(obj.model_matrix));
+
+        if (skinned) {
+            GLint jm_loc = glGetUniformLocation(prog->prog_id, "u_joint_matrices");
             Animation* anim = nullptr;
             if (!obj.animations.empty()) {
                 int idx = obj.anim_index < (int)obj.animations.size()
                               ? obj.anim_index : 0;
                 anim = &obj.animations[idx];
             }
-            process_animations(obj.raw_model, anim, time, joint_matrices_loc);
+            process_animations(obj.raw_model, anim, time, jm_loc);
         }
 
         drawModel(obj.gl_model);

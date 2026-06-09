@@ -1,0 +1,51 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% raca_eye.1
+#
+% raca_eye.2
+#
+% raca_eye.3
+#
+% raca_eye.4
+#
+% raca_eye.5
+#
+% raca_eye.6
+#
+% raca_eyeball
+#
+% raca_face
+#
+% raca_face
+#
+% raca_eyeball
+#
+% raca_eye_Hilight
+#
+% raca_eye_shade
+#
+% raca_body
+#
+% raca_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% raca_body_m
+#
+% raca_eyeball_m
+#
+% raca_face_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

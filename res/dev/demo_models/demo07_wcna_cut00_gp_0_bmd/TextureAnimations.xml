@@ -1,0 +1,29 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% WCN_a_eye.1
+#
+% WCN_a_eye.2
+#
+% WCN_a_eye.3
+#
+% WCN_a_body
+#
+% WCN_a_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% WCN_a_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

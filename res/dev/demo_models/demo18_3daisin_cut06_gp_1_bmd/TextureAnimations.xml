@@ -1,0 +1,25 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% hikari
+#
+% grad
+</Textures>
+
+	<Materials>
+#
+% ef_3daishin_tail1_v
+#
+% ef_3daishin_tail2_v
+#
+% ef_3daishin_tail3_v
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

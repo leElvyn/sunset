@@ -1,0 +1,23 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% F_nami_LS
+#
+% F_env
+#
+% fbtex_dummy
+</Textures>
+
+	<Materials>
+#
+% aa_MA02_demo34taki
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

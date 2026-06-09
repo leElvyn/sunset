@@ -1,0 +1,25 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% al_SWA
+#
+% al_podA
+</Textures>
+
+	<Materials>
+#
+% al_SWA_m
+#
+% al_SWgripA_m
+#
+% al_podA_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

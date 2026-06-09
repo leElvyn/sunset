@@ -1,0 +1,65 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% raf_body
+#
+% raf_eye.1
+#
+% raf_eye.2
+#
+% raf_eye.3
+#
+% raf_eye.4
+#
+% raf_eye.5
+#
+% raf_eye.6
+#
+% raf_eyeball
+#
+% raf_face
+#
+% raf_scope
+#
+% raf_scope
+#
+% raf_body
+#
+% raf_face
+#
+% raf_body
+#
+% raf_eyeball
+#
+% raf_eye_Hlight
+#
+% raf_eye_shade
+#
+% raf_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% eyeball
+#
+% raf_body_m
+#
+% raf_face_m
+#
+% raf_hood2_m
+#
+% raf_hood_m
+#
+% raf_scope_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -1,0 +1,51 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% shad_eye.1
+#
+% shad_eye.2
+#
+% shad_eye.3
+#
+% shad_eye.4
+#
+% shad_eye.5
+#
+% shad_eye.6
+#
+% shad_eyeball
+#
+% shad_face
+#
+% shad_face
+#
+% shad_body
+#
+% shad_eyeball
+#
+% shad_eye_Hlight
+#
+% shad_eye_shade
+#
+% shad_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% eyeball
+#
+% shad_body_m
+#
+% shad_face_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

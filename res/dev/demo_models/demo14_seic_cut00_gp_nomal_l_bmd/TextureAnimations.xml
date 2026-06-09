@@ -1,0 +1,47 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% seiC_body_256
+#
+% seiC_mizo1_256
+#
+% seiC_hikari_256
+#
+% seiC_mizo2_256
+#
+% hikari_patarn_64
+#
+% body_syutugen
+#
+% seiC_mizo1_256
+#
+% seiC_mizo2_256
+#
+% hikari_patarn_64
+#
+% seiC_body_256
+#
+% seiC_bero_64
+</Textures>
+
+	<Materials>
+#
+% seiC_bero_m
+#
+% seiC_body_m
+#
+% seiC_face_m
+#
+% seiC_hane_m
+#
+% seiC_sizuku_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

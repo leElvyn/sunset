@@ -1,0 +1,25 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% kumo_simple_s4
+</Textures>
+
+	<Materials>
+#
+% smkPlane1mat_v
+#
+% smkPlane2mat_v_x
+#
+% smkPlane3mat_v_x
+#
+% smkPlane4mat_v_x
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

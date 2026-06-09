@@ -1,0 +1,49 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% len_eye.1
+#
+% len_eye.2
+#
+% len_eye.3
+#
+% len_eye.4
+#
+% len_eye.5
+#
+% len_eye.6
+#
+% len_eyeball
+#
+% len_face
+#
+% len_face
+#
+% len_body
+#
+% len_eyeball
+#
+% len_eye_Hlight
+#
+% len_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% eyeball
+#
+% len_body_m
+#
+% len_face_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

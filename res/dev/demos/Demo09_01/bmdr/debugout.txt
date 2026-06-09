@@ -1,0 +1,207 @@
+indexToMatIndex: 0000 0001 0002 (3 many)
+IndirectTexturing: 936 bytes (3 many)
+cull mode: 00000002 00000001 00000000 (3 many)
+color1: ffffffff (1 many)
+numChans (?) (unk[2]): 01 54 68 69 (4 many)
+colorChanInfo: 0000ff020100ffff 000000020100ffff 010000010000ffff 000000000200ffff 0100ff020100ffff (5 many)
+color2: 101010ff 00000000 (2 many)
+light: (0 many)
+texCounts (unk[3]): 01 54 68 69 (4 many)
+TexGen: 01043cff 01041eff (2 many)
+TexGen2: (0 many)
+TexMtxInfo: 200 bytes (2 many)
+TexMtxInfo2: 0 bytes (-1 many)
+indexToTexIndex: 0000 0001 (2 many)
+tevOrderInfo: 000004ff (1 many)
+colorS10: 00000000000000ff 00ff00ff00ff00ff 0000000000000000 00ff0000002400ff (4 many)
+color3: 000000ff ffffffff (2 many)
+tevStageCounts (unk[4]): 01 54 68 69 (4 many)
+TevStageInfo (op, bias, scale, doClamp, tevRegId):
+ff  0e 08 0a 02  00 00 00 01 00  07 06 04 07  00 00 00 01 00  ff
+ff  0f 04 08 0f  00 00 00 01 00  07 04 05 07  00 00 00 01 00  ff
+ff  0e 08 0a 02  00 00 01 01 00  07 06 04 07  00 00 00 01 00  ff (3 many)
+tevSwapModeInfo: 0000ffff 0000ffff 0000ffff (3 many)
+tevSwapModeTable: 00010203 (1 many)
+fog:
+02000140459c400046c350003f80000048f42400606060ff01000101010301060109010d01120117011d0124 (1 many)
+alpha comp: 0700010700ffffff (1 many)
+blend info: 00010003 01040503 (2 many)
+z mode: 010301ff 010300ff (2 many)
+matData6 (isDirect (?)): 00 01 54 68 (4 many)
+matData7: 00 01 54 68 (4 many)
+NBTscale:00ffffff3f8000003f8000003f8000005468697320697320
+
+eye 
+unk: unk1, cull, numChans, texCounts, tevCounts, matData6Index, zMode, matData7Index: 01 00 00 00 00 01 00 01
+color1 (?): 00000000
+chanControls (?): 0000000100020003
+color2 (?): 00000001
+lights: ffffffffffffffffffffffffffffffff
+texGenInfo: 0000ffffffffffffffffffffffffffff
+texGenInfo2: ffffffffffffffffffffffffffffffff
+texMatrices: 0000ffffffffffffffffffffffffffffffffffff
+dttMatrices: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Textures: 0000ffffffffffffffffffffffffffff
+color3: 0000000100010001
+constColorSel: 0c0e0e0c0c0c0c0c0c0c0c0c0c0c0c0c
+constAlphaSel: 1f1f1f1f1c1c1c1c1c1c1c1c1c1c1c1c
+tevOrderInfo: 0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+colorS10: 0000000100010002
+tevStageInfo: 0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+tevSwapModeInfo: 0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+tevSwapModeTable: 0000000000000000
+unk6: ffffffffffffffffffffffffffffffffffffffffffffffff
+index fog, alphaComp, blend, nbtScale: 0000000000000000
+
+yamimark_mat 
+unk: unk1, cull, numChans, texCounts, tevCounts, matData6Index, zMode, matData7Index: 04 00 00 00 00 01 01 01
+color1 (?): 00000000
+chanControls (?): 0001000100020003
+color2 (?): 00000001
+lights: ffffffffffffffffffffffffffffffff
+texGenInfo: 0001ffffffffffffffffffffffffffff
+texGenInfo2: ffffffffffffffffffffffffffffffff
+texMatrices: 0001ffffffffffffffffffffffffffffffffffff
+dttMatrices: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Textures: 0001ffffffffffffffffffffffffffff
+color3: 0001000100010001
+constColorSel: 0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c
+constAlphaSel: 1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c
+tevOrderInfo: 0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+colorS10: 0001000300010002
+tevStageInfo: 0001ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+tevSwapModeInfo: 0001ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+tevSwapModeTable: 0000000000000000
+unk6: ffffffffffffffffffffffffffffffffffffffffffffffff
+index fog, alphaComp, blend, nbtScale: 0000000000010000
+
+ym_body 
+unk: unk1, cull, numChans, texCounts, tevCounts, matData6Index, zMode, matData7Index: 01 00 00 00 00 01 00 01
+color1 (?): 00000000
+chanControls (?): 0004000100020003
+color2 (?): 00000001
+lights: ffffffffffffffffffffffffffffffff
+texGenInfo: 0000ffffffffffffffffffffffffffff
+texGenInfo2: ffffffffffffffffffffffffffffffff
+texMatrices: 0000ffffffffffffffffffffffffffffffffffff
+dttMatrices: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+Textures: 0000ffffffffffffffffffffffffffff
+color3: 0000000100010001
+constColorSel: 0c0e0e0c0c0c0c0c0c0c0c0c0c0c0c0c
+constAlphaSel: 1f1f1f1f1c1c1c1c1c1c1c1c1c1c1c1c
+tevOrderInfo: 0000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+colorS10: 0000000100010002
+tevStageInfo: 0002ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+tevSwapModeInfo: 0002ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+tevSwapModeTable: 0000000000000000
+unk6: ffffffffffffffffffffffffffffffffffffffffffffffff
+index fog, alphaComp, blend, nbtScale: 0000000000000000
+
+
+100 ffff
+0.5 0.5 0.5 1 1 
+0 ffff
+0 0 
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+
+100 ffff
+0.5 0.5 0.5 0.825195 1.15723 
+0 ffff
+-0.0683594 0.0341797 
+1 0 0 0 
+0 1 0 0 
+0 0 1 0 
+0 0 0 1 
+
+
+0000 ffff ffff ffff ffff ffff ffff ffff ffff ffff 
+0.5 0 0 0 0.5 0 
+01 ff ff ff 
+0.5 0 0 0 0.5 0 
+01 ff ff ff 
+0.5 0 0 0 0.5 0 
+01 ff ff ff 
+0000ffff
+0000ffff
+0000ffff
+0000ffff
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+
+
+0000 ffff ffff ffff ffff ffff ffff ffff ffff ffff 
+0.5 0 0 0 0.5 0 
+01 ff ff ff 
+0.5 0 0 0 0.5 0 
+01 ff ff ff 
+0.5 0 0 0 0.5 0 
+01 ff ff ff 
+0000ffff
+0000ffff
+0000ffff
+0000ffff
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+
+
+0000 ffff ffff ffff ffff ffff ffff ffff ffff ffff 
+0.5 0 0 0 0.5 0 
+01 ff ff ff 
+0.5 0 0 0 0.5 0 
+01 ff ff ff 
+0.5 0 0 0 0.5 0 
+01 ff ff ff 
+0000ffff
+0000ffff
+0000ffff
+0000ffff
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+0000 0000 0000 0000 00ff ffff 
+
+
+

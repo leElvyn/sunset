@@ -1,0 +1,47 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% knj_circle
+#
+% knj_crest.1
+#
+% knj_crest.2
+#
+% knj_crest.3
+#
+% knj_crest.4
+#
+% knj_crest.5
+#
+% knj_crest.6
+#
+% knj_face
+#
+% knj_face
+#
+% knj_crest.1
+#
+% knj_circle
+#
+% knj_body
+</Textures>
+
+	<Materials>
+#
+% knj_body_m
+#
+% knj_circle_m
+#
+% knj_crest_m
+#
+% knj_face_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

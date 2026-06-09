@@ -1,0 +1,29 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% cow_eye.1
+#
+% cow_eye.2
+#
+% cow_eye.3
+#
+% cow
+#
+% cow_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% cow_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

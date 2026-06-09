@@ -1,0 +1,17 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+</Textures>
+
+	<Materials>
+#
+% sword_mask_mat
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -1,0 +1,53 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% zrCB_eye.1
+#
+% zrCB_eye.2
+#
+% zrC_body
+#
+% zrC_face
+#
+% zrC_body
+#
+% zrC_face
+#
+% nurunuru
+#
+% zrC_face_gray
+#
+% zrC_body
+#
+% nurunuru
+#
+% zrC_body_gray
+#
+% kolin_bed
+#
+% zrCB_eye.1
+#
+% zrC_eye_gray.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% zrCB_bed_m
+#
+% zrCB_body_m
+#
+% zrCB_face_m
+#
+% zrCB_mark_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

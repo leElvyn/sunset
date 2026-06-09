@@ -1,0 +1,21 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% M_SiroToKuro
+#
+% rockGlad
+</Textures>
+
+	<Materials>
+#
+% ef_rockKabuse_v_x
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -1,0 +1,39 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% sizuku_rain_128
+#
+% sei_a_body_256_I4
+#
+% mizo_256_S3_Mip
+#
+% hikari_256_I4
+#
+% mizo_256_I4
+#
+% hikari_patarn_64_I4
+#
+% bero_64_S3TC
+</Textures>
+
+	<Materials>
+#
+% seiA_bero_m
+#
+% seiA_body_m
+#
+% seiA_sippo_m
+#
+% seiA_sizuku_m
+#
+% seiA_tuno_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

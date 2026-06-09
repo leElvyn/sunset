@@ -1,0 +1,25 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% s2_tex01
+#
+% yami_toon
+</Textures>
+
+	<Materials>
+#
+% s2_mat_body
+#
+% s2_mat_head
+#
+% s2_mat_mark
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

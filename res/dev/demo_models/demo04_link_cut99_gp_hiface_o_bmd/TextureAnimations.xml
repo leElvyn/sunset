@@ -1,0 +1,57 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% al_eyeball
+#
+% al_eyeball
+#
+% al_face2
+#
+% t_etc_S3TC_ha
+#
+% t_etc_S3TC_sita
+#
+% t_etc_S3TC_ha
+#
+% t_etc_S3TC_sita
+#
+% al_eye_mizo
+#
+% al_face2
+#
+% al_eyeball
+#
+% highlight02
+#
+% eye_kage01
+</Textures>
+
+	<Materials>
+#
+% al_eyeballL_m
+#
+% al_eyeballR_m
+#
+% al_face_m
+#
+% matuge
+#
+% sita
+#
+% tongue
+#
+% tooth
+#
+% tongue(2)
+#
+% tooth(2)
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

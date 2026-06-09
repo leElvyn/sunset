@@ -1,0 +1,25 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% uri_baby_body
+#
+% uri_baby_body
+#
+% baby_kago
+</Textures>
+
+	<Materials>
+#
+% baby_kago_m
+#
+% uri_baby_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -1,0 +1,23 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% wb_eye
+</Textures>
+
+	<Materials>
+#
+% bagu
+#
+% eye
+#
+% kura
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

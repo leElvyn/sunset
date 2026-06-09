@@ -1,0 +1,47 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% grZ_eye.1
+#
+% grZ_eye.2
+#
+% grZ_eye.3
+#
+% grZ_eye.4
+#
+% grZ_eyeball
+#
+% grZ_face
+#
+% grZ_body
+#
+% grZ_face
+#
+% grZ_eyeball
+#
+% grZ_eye_Hilight
+#
+% grZ_eye_shade
+#
+% grZ_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% grZ_eyeball
+#
+% grZ_face_m
+#
+% grZ_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

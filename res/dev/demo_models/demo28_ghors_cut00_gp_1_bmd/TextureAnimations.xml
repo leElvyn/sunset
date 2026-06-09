@@ -1,0 +1,33 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% hg_tail
+#
+% hg_body
+#
+% hg_hair
+#
+% hg_eye
+</Textures>
+
+	<Materials>
+#
+% hg_eye_m
+#
+% hg_hair_m
+#
+% hg_kanagu_m
+#
+% hg_nuki_m
+#
+% hg_yoroi
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

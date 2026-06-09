@@ -1,0 +1,51 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% ykM_eye.1
+#
+% ykM_eye.2
+#
+% ykM_eye.3
+#
+% ykM_eye.4
+#
+% ykM_eye.5
+#
+% ykM_eyeball
+#
+% ykM_face
+#
+% ykM_face
+#
+% ykM_eyeball
+#
+% ykM_eye_Hilight
+#
+% ykM_eye_shade
+#
+% ykM_body
+#
+% ykM_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% ykM_body
+#
+% ykM_eyeball
+#
+% ykm_face
+#
+% ykM_body(2)
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

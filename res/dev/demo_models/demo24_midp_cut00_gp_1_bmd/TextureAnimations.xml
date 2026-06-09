@@ -1,0 +1,79 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% midP_body
+#
+% midP_eye.1
+#
+% midP_eye.2
+#
+% midP_eye.3
+#
+% midP_eye.4
+#
+% midP_eye.5
+#
+% midP_eye.6
+#
+% midP_eyeball
+#
+% midP_face
+#
+% midP_robe
+#
+% midP_robe_re
+#
+% midP_robe_re
+#
+% wave2Gradbti
+#
+% noise64
+#
+% midP_robe
+#
+% midP_face
+#
+% midP_body
+#
+% midP_arm_leg
+#
+% midP_arm_leg_TW
+#
+% midP_eyeball
+#
+% midP_eye_Hlight
+#
+% midP_eye_shadow
+#
+% midP_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eyeL
+#
+% SC_eyeR
+#
+% eyeball_L
+#
+% eyeball_R
+#
+% midP_arm_leg_m
+#
+% midP_body_m
+#
+% midP_face_m
+#
+% midP_robe_m
+#
+% midP_tw_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -1,0 +1,51 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% al_eye.2
+#
+% al_eye.3
+#
+% al_eye.4
+#
+% al_eye.5
+#
+% al_eye.6
+#
+% al_eye.7
+#
+% al_eyeball
+#
+% al_face
+#
+% al_face
+#
+% al_eyeball
+#
+% highlight02
+#
+% eye_kage01
+#
+% al_eye.1
+</Textures>
+
+	<Materials>
+#
+% al_eyeL_m
+#
+% al_eyeR_m
+#
+% al_eyeballL_m
+#
+% al_eyeballR_m
+#
+% al_face_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -1,0 +1,51 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% hoz_eye.1
+#
+% hoz_eye.2
+#
+% hoz_eye.3
+#
+% hoz_eye.4
+#
+% hoz_eye.5
+#
+% hoz_eye.6
+#
+% hoz_eyeball
+#
+% hoz_face
+#
+% hoz_face
+#
+% hoz_body
+#
+% hoz_eyeball
+#
+% hoz_eye_Hight
+#
+% hoz_eye_shade
+#
+% hoz_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% eyeball
+#
+% hoz_body_m
+#
+% hoz_face_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -1,0 +1,51 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% lud_eye.1
+#
+% lud_eye.2
+#
+% lud_eye.3
+#
+% lud_eye.4
+#
+% lud_eye.5
+#
+% lud_eye.6
+#
+% lud_eyeball
+#
+% lud_face
+#
+% lud_face
+#
+% lud_body
+#
+% lud_eyeball
+#
+% lud_eye_Hlight
+#
+% lud_eye_shade
+#
+% lud_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% eyeball
+#
+% lud_body_m
+#
+% lud_face_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

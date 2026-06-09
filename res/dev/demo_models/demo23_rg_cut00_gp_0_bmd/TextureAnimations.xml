@@ -1,0 +1,29 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% rg_tex01
+#
+% rg_kankyo
+#
+% rg_tex02
+</Textures>
+
+	<Materials>
+#
+% rg_body
+#
+% rg_cloak
+#
+% rg_face
+#
+% rg_mark
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

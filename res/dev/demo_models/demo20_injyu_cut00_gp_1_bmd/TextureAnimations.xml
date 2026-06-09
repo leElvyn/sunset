@@ -1,0 +1,23 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% L_al_Injyu01
+#
+% al_Injyu_HightLight_I4
+</Textures>
+
+	<Materials>
+#
+% al_Injyu00
+#
+% al_Injyu01
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

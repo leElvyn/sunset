@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% MAN_a_l
+</Textures>
+
+	<Materials>
+#
+% MAN_a_l_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

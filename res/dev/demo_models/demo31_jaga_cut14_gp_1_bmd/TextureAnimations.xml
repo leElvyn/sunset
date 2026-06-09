@@ -1,0 +1,51 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% jaga_eye.1
+#
+% jaga_eye.2
+#
+% jaga_eye.3
+#
+% jaga_eye.4
+#
+% jaga_eye.5
+#
+% jaga_eye.6
+#
+% jaga_eyeball
+#
+% jaga_face
+#
+% jaga_body
+#
+% jaga_face
+#
+% jaga_eyeball
+#
+% jaga_eye_Hlight
+#
+% jaga_eye_shade
+#
+% jaga_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% jaga_eyeball
+#
+% jaga_face_m
+#
+% jaga_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

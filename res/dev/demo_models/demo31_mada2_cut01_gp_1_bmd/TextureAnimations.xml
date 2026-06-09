@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% MAD_a2_l_body
+</Textures>
+
+	<Materials>
+#
+% MAD_a2_l_body_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

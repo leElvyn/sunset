@@ -1,0 +1,57 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% moi_body
+#
+% moi_eye.1
+#
+% moi_eye.2
+#
+% moi_eye.3
+#
+% moi_eye.4
+#
+% moi_eye.5
+#
+% moi_eye.6
+#
+% moi_eyeball
+#
+% moi_face
+#
+% moi_body
+#
+% moi_face
+#
+% moi_eyeball
+#
+% moi_eye_Hlight
+#
+% moi_eye_shade
+#
+% moi_belt
+#
+% moi_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% moi_belt_m
+#
+% moi_eyeball
+#
+% moi_face_m
+#
+% moi_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

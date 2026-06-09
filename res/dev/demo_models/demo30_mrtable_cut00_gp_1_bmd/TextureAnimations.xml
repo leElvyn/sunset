@@ -1,0 +1,33 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% U_gata04
+#
+% J_huti01
+#
+% U_kusari_04
+#
+% E_gate02
+</Textures>
+
+	<Materials>
+#
+% aa_gate_v
+#
+% aa_kusari_v
+#
+% aa_sousyoku_v
+#
+% aa_wall_v
+#
+% hh_Sand_v_x
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

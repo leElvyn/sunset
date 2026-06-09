@@ -1,0 +1,45 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% wb_eye
+#
+% wb_body
+#
+% wb_body
+#
+% wb_body
+#
+% wb_body
+#
+% wb_body
+#
+% wb_eye
+#
+% wb_body
+</Textures>
+
+	<Materials>
+#
+% bagu
+#
+% eye
+#
+% ha
+#
+% hana
+#
+% kuchi
+#
+% kura
+#
+% wb_body
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

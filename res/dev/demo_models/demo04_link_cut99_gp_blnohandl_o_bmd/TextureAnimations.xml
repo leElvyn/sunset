@@ -1,0 +1,43 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% bl_skin_128_128
+#
+% bl_lowbody_128_128
+#
+% bl_hand_64_32
+#
+% t_earring_S3TC_test
+#
+% al_ear_32_32
+#
+% al_belt_32_64
+</Textures>
+
+	<Materials>
+#
+% bl_beltS_m
+#
+% bl_ear_m
+#
+% bl_earring_m
+#
+% bl_handLA_m
+#
+% bl_handRA_m
+#
+% bl_lowbody_m
+#
+% bl_skin_m
+#
+% bl_upbody_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

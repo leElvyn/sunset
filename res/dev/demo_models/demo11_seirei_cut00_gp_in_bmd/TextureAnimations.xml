@@ -1,0 +1,41 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% seiB_body_256
+#
+% seiB_mizo1_256
+#
+% seiB_hikari_256
+#
+% seiB_mizo2_256
+#
+% hikari_patarn_64_I4
+#
+% sippo_syutugen64
+#
+% hikari_patarn_64_I4
+#
+% body_syutugen
+#
+% seiB_bero_64
+</Textures>
+
+	<Materials>
+#
+% bero_m
+#
+% body_m
+#
+% sippo_m
+#
+% sizuku_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

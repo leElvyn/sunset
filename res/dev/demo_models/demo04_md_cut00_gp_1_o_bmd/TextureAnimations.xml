@@ -1,0 +1,75 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% midona_eye.1
+#
+% midona_eye.2
+#
+% midona_eye.3
+#
+% midona_eye.4
+#
+% midona_eye.5
+#
+% midona_eyeball
+#
+% midona_hair
+#
+% midona_hair_ring
+#
+% midona_hand
+#
+% midona_body
+#
+% midona_hand
+#
+% midona_line01
+#
+% midona_hair_ring
+#
+% midona_hair
+#
+% midona_hair_light
+#
+% midona_eyeball
+#
+% midona_eye_Shadow
+#
+% midona_eye_Hlight
+#
+% midona_eye.1
+#
+% midona_line02
+</Textures>
+
+	<Materials>
+#
+% md_body_m_v
+#
+% md_eye_m_v
+#
+% md_eyeballL_m_v
+#
+% md_eyeballR_m_v
+#
+% md_hair_m_v
+#
+% md_hair_ring_m_v
+#
+% md_handLA_m_v
+#
+% md_handRA_m_v
+#
+% md_mouth_m_v
+#
+% md_zface_m_v
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

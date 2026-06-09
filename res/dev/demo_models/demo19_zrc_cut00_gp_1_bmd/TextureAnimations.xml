@@ -1,0 +1,65 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% zrC_eye.1
+#
+% zrC_eye.2
+#
+% zrC_eye.3
+#
+% zrC_eye.4
+#
+% zrC_eye.5
+#
+% zrC_eye.6
+#
+% zrC_eyeball
+#
+% zrC_face
+#
+% zrC_body
+#
+% zrC_face
+#
+% nurunuru
+#
+% zrC_face_gray
+#
+% zrC_body
+#
+% nurunuru
+#
+% zrC_body_gray
+#
+% zrC_eyeball
+#
+% zrC_eye_Hlight
+#
+% zrC_eye_shade
+#
+% zrC_eye.1
+#
+% zrC_eye_gray.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% eyeball
+#
+% zrC_body_m
+#
+% zrC_face_m
+#
+% zrC_mark_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

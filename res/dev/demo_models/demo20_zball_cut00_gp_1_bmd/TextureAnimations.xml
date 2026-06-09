@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% kankyomap32i8_01
+</Textures>
+
+	<Materials>
+#
+% mat_ball
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

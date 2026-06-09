@@ -1,0 +1,167 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% al_bag
+#
+% al_belt
+#
+% al_boots
+#
+% al_cap
+#
+% al_ear
+#
+% al_eri
+#
+% al_eye_mizo
+#
+% al_eyeball
+#
+% al_eyeball
+#
+% al_face2
+#
+% al_gauntletL
+#
+% al_hair
+#
+% al_hand
+#
+% al_inner
+#
+% al_lowbody
+#
+% al_pants
+#
+% al_skirt
+#
+% al_upbody
+#
+% t_earring_S3TC_test
+#
+% t_etc_S3TC_ha
+#
+% t_etc_S3TC_sita
+#
+% t_etc_S3TC_ha
+#
+% t_etc_S3TC_ha
+#
+% t_etc_S3TC_sita
+#
+% t_etc_S3TC_sita
+#
+% al_eye_mizo
+#
+% al_upbody
+#
+% al_skirt
+#
+% al_pants
+#
+% al_lowbody
+#
+% al_inner
+#
+% al_hand
+#
+% al_hand
+#
+% al_hair
+#
+% al_gauntletL
+#
+% al_face2
+#
+% al_eyeball
+#
+% al_eyeball
+#
+% al_eri
+#
+% t_earring_S3TC_test
+#
+% al_ear
+#
+% al_cap
+#
+% al_boots
+#
+% al_belt
+#
+% al_belt
+#
+% al_bag
+#
+% al_armL
+#
+% al_armL
+</Textures>
+
+	<Materials>
+#
+% al_armL_m
+#
+% al_armR_m
+#
+% al_bag_m
+#
+% al_beltS_m
+#
+% al_beltW_m
+#
+% al_boots_m
+#
+% al_cap_m
+#
+% al_ear_m
+#
+% al_earring_m
+#
+% al_eri_m
+#
+% al_eyeballL_m
+#
+% al_eyeballR_m
+#
+% al_face_m
+#
+% al_gauntletL_m
+#
+% al_hair_m
+#
+% al_handLA_m
+#
+% al_inner_m
+#
+% al_lowbody_m
+#
+% al_pants_m
+#
+% al_skirt_m
+#
+% al_upbody_m
+#
+% matuge
+#
+% sita
+#
+% tongue
+#
+% tooth
+#
+% al_handLA_m(2)
+#
+% tongue(2)
+#
+% tooth(2)
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

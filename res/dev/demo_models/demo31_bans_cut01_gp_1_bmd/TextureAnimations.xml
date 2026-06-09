@@ -1,0 +1,67 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% bans_eye.1
+#
+% bans_eye.2
+#
+% bans_eye.3
+#
+% bans_eye.4
+#
+% bans_eye.5
+#
+% bans_eye.6
+#
+% bans_eyeball
+#
+% bans_face
+#
+% bans_glass
+#
+% bans_hangou
+#
+% bans_hangou
+#
+% bans_glass
+#
+% bans_glass_gray
+#
+% bans_glass_pika
+#
+% bans_face
+#
+% bans_eyeball
+#
+% bans_eye_Hilight
+#
+% bans_eye_shade
+#
+% bans_body
+#
+% bans_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% bans_body_m
+#
+% bans_eyeball
+#
+% bans_face_m
+#
+% bans_glass_m
+#
+% bans_hangou_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

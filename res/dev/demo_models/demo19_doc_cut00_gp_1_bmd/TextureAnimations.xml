@@ -1,0 +1,55 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% doc_G_eye.2
+#
+% doc_G_eye.3
+#
+% doc_body
+#
+% doc_eye.1
+#
+% doc_eye.2
+#
+% doc_eye.3
+#
+% doc_eyeball
+#
+% doc_face
+#
+% doc_eyeball
+#
+% doc_eye_Hight
+#
+% doc_eye_shade
+#
+% doc_G_eye.1
+#
+% doc_face
+#
+% doc_body
+#
+% doc_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% doc_body_m
+#
+% doc_face_m
+#
+% doc_glass_m
+#
+% eyeball
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

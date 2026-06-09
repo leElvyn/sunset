@@ -1,0 +1,53 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% yelia_eye.1
+#
+% yelia_eye.2
+#
+% yelia_eye.3
+#
+% yelia_eye.4
+#
+% yelia_eye.5
+#
+% yelia_eye.6
+#
+% yelia_eyeball
+#
+% yelia_hair
+#
+% yelia_body_asa
+#
+% yelia_hair
+#
+% yelia_hairA
+#
+% yelia_eyeball
+#
+% yelia_eye_Hlight
+#
+% yelia_eye_shade
+#
+% yelia_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% eyeball
+#
+% yelia_hair
+#
+% yelia_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

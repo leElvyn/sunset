@@ -1,0 +1,29 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% WAN_b_eye.1
+#
+% WAN_b_eye.2
+#
+% WAN_b_eye.3
+#
+% WAN_b_body
+#
+% WAN_b_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% WAN_b_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

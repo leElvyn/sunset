@@ -1,0 +1,27 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% U_light03
+#
+% U_Msquare01
+</Textures>
+
+	<Materials>
+#
+% aa_light04_v_x
+#
+% hh_light01_v_x
+#
+% ii_light02_v_x
+#
+% jj_light03_v_x
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

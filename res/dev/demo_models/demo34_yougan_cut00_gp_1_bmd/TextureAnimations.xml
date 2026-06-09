@@ -1,0 +1,23 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% L_VolcBom_01
+#
+% mosaic16i8_01
+#
+% glad8x64ia8_03
+</Textures>
+
+	<Materials>
+#
+% aa_VolcBom_v_x
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

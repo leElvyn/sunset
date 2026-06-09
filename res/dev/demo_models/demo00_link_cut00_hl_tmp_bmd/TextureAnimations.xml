@@ -1,0 +1,29 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% bl_TF03
+#
+% bl_TF02
+#
+% bl_TF01
+</Textures>
+
+	<Materials>
+#
+% al_handLA_TF_01_m
+#
+% al_handLA_TF_02_m
+#
+% al_handLA_TF_03_m
+#
+% bl_handLA_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

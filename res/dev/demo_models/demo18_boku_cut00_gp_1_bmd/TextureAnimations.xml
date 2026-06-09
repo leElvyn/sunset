@@ -1,0 +1,99 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% al_eye.1
+#
+% al_eye.2
+#
+% al_eye.3
+#
+% al_eye.4
+#
+% al_eye.5
+#
+% al_eye.6
+#
+% al_eye.7
+#
+% al_eyeball
+#
+% al_face
+#
+% bl_hair
+#
+% bl_hand
+#
+% bl_handL
+#
+% bl_lowbody
+#
+% bl_skin
+#
+% bl_upbody
+#
+% t_earring_S3TC_test
+#
+% bl_upbody
+#
+% bl_skin
+#
+% bl_lowbody
+#
+% bl_hand
+#
+% bl_handL
+#
+% bl_hair
+#
+% t_earring_S3TC_test
+#
+% al_ear
+#
+% al_face
+#
+% al_eyeball
+#
+% highlight02
+#
+% eye_kage01
+#
+% al_eye.1
+</Textures>
+
+	<Materials>
+#
+% al_eyeL_m
+#
+% al_eyeR_m
+#
+% al_eyeballL_m
+#
+% al_eyeballR_m
+#
+% al_face_m
+#
+% bl_ear_m
+#
+% bl_earring_m
+#
+% bl_hair_m
+#
+% bl_handLA_m
+#
+% bl_handRA_m
+#
+% bl_lowbody_m
+#
+% bl_skin_m
+#
+% bl_upbody_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

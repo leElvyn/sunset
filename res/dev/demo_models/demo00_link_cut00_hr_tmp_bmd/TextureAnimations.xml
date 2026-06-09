@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% al_hand_high
+</Textures>
+
+	<Materials>
+#
+% al_handRA_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

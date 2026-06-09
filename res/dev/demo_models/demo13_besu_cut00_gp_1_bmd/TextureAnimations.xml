@@ -1,0 +1,67 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% besu_eye.1
+#
+% besu_eye.10
+#
+% besu_eye.11
+#
+% besu_eye.12
+#
+% besu_eye.13
+#
+% besu_eye.14
+#
+% besu_eye.15
+#
+% besu_eye.2
+#
+% besu_eye.3
+#
+% besu_eye.4
+#
+% besu_eye.5
+#
+% besu_eye.6
+#
+% besu_eye.7
+#
+% besu_eye.8
+#
+% besu_eye.9
+#
+% besu_eyeball_asa
+#
+% besu_face
+#
+% besu_face
+#
+% besu_eyeball_asa
+#
+% besu_eye_Hlight
+#
+% besu_body
+#
+% besu_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% besu_body_m
+#
+% besu_eyeball
+#
+% besu_face_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

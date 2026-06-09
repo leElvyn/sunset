@@ -1,0 +1,29 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% zl2_2ndAlpha01
+#
+% newHibi0923_2
+#
+% kumo_simple
+#
+% zl2_glow03
+</Textures>
+
+	<Materials>
+#
+% hibi0_v
+#
+% hibi1_v
+#
+% hibi2_v
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

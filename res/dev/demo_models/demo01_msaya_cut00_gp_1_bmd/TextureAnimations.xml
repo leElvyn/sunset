@@ -1,0 +1,21 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% moi_SWgripA
+</Textures>
+
+	<Materials>
+#
+% moi_SWgripA_m
+#
+% moi_podA_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

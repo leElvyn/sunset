@@ -1,0 +1,31 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% midona_eyeball
+#
+% midona_eye_Shadow
+#
+% midona_eye_Hlight
+</Textures>
+
+	<Materials>
+#
+% md_B_eyeballL_m_v
+#
+% md_B_eyeballR_m_v
+#
+% md_B_hasita_m_v
+#
+% md_B_hasita_m_v(2)
+#
+% md_B_hasita_m_v(3)
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

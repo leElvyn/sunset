@@ -1,0 +1,71 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% bl_TF02
+#
+% bl_TF03
+#
+% wl_body
+#
+% wl_ea‚’ring
+#
+% wl_eye.1
+#
+% wl_eye.2
+#
+% wl_eye.3
+#
+% wl_eye.4
+#
+% wl_eye.5
+#
+% wl_eyeball
+#
+% bl_TF03
+#
+% bl_TF02
+#
+% bl_TF01
+#
+% wl_eyeball
+#
+% wl_eye_Hilight
+#
+% wl_eye_kage
+#
+% wl_eye.1
+#
+% wl_ea‚’ring
+#
+% wl_body
+</Textures>
+
+	<Materials>
+#
+% wl_body_m
+#
+% wl_earring_m
+#
+% wl_eyeL_m
+#
+% wl_eyeR_m
+#
+% wl_eyeballL_m
+#
+% wl_eyeballR_m
+#
+% wl_handLA_TF_01_m
+#
+% wl_handLA_TF_02_m
+#
+% wl_handLA_TF_03_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

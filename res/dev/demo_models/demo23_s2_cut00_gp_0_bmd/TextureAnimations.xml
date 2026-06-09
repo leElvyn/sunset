@@ -1,0 +1,21 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% s2_tex01
+</Textures>
+
+	<Materials>
+#
+% s2_mat_body
+#
+% s2_mat_mark
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

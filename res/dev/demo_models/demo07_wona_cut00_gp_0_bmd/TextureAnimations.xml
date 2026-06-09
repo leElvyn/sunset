@@ -1,0 +1,29 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% WON_a_eye.1
+#
+% WON_a_eye.2
+#
+% WON_a_eye.3
+#
+% WON_a_body
+#
+% WON_a_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% WON_a_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -1,0 +1,51 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% aru_eye.1
+#
+% aru_eye.2
+#
+% aru_eye.3
+#
+% aru_eye.4
+#
+% aru_eye.5
+#
+% aru_eye.6
+#
+% aru_eyeball
+#
+% aru_face
+#
+% aru_face
+#
+% aru_eyeball
+#
+% aru_eye_Hlight
+#
+% aru_eye_shade
+#
+% aru_body
+#
+% aru_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% aru_body_m
+#
+% aru_eyeball_m
+#
+% aru_face_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

@@ -1,0 +1,29 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% MAS_a_eye.1
+#
+% MAS_a_eye.2
+#
+% MAS_a_eye.3
+#
+% MAS_a_eye.1
+#
+% MAS_a_body
+</Textures>
+
+	<Materials>
+#
+% MAS_a_m
+#
+% SC_eye
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

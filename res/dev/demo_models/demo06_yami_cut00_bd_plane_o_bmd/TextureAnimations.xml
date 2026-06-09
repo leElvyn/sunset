@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% yami0321_n
+</Textures>
+
+	<Materials>
+#
+% lambert171
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

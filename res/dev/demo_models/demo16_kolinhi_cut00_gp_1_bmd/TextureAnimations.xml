@@ -1,0 +1,57 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% kolin_eye.1
+#
+% kolin_eye.2
+#
+% kolin_eye.3
+#
+% kolin_eye.4
+#
+% kolin_eye.5
+#
+% kolin_eye.6
+#
+% kolin_eyeball
+#
+% kolin_face
+#
+% kolin_hand_high_64
+#
+% kolin_hand_high_64
+#
+% kolin_face
+#
+% kolin_eyeball
+#
+% kolin_eye_Hlight
+#
+% kolin_eye_shade
+#
+% kolin_body
+#
+% kolin_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% kolin_body_m
+#
+% kolin_eyeball_m
+#
+% kolin_face_m
+#
+% kolin_hand_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

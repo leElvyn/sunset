@@ -1,0 +1,103 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% bl_TF02
+#
+% bl_TF03
+#
+% gnd_body
+#
+% gnd_eye.1
+#
+% gnd_eye.2
+#
+% gnd_eye.3
+#
+% gnd_eye.4
+#
+% gnd_eye.5
+#
+% gnd_eye.6
+#
+% gnd_eyeball
+#
+% gnd_face
+#
+% gnd_hand
+#
+% gnd_injury
+#
+% warp_tex
+#
+% gnd_body
+#
+% gnd_face
+#
+% gnd_SPenv
+#
+% warp_tex
+#
+% gnd_injury
+#
+% gnd_hand
+#
+% bl_TF03
+#
+% bl_TF02
+#
+% bl_TF01
+#
+% gnd_face
+#
+% gnd_body
+#
+% gnd_eyeball
+#
+% gnd_eye_Hlight
+#
+% gnd_eye_Shadow
+#
+% gnd_beast_eyeball
+#
+% gnd_eye.1
+#
+% gnd_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye_L
+#
+% SC_eye_R
+#
+% eyeball_L
+#
+% eyeball_R
+#
+% gnd_body_m
+#
+% gnd_face_m
+#
+% gnd_handRA_TF_01_m
+#
+% gnd_handRA_TF_02_m
+#
+% gnd_handRA_TF_03_m
+#
+% gnd_hand_m
+#
+% gnd_injury_m
+#
+% gnd_jewel_m
+#
+% gnd_mant1_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

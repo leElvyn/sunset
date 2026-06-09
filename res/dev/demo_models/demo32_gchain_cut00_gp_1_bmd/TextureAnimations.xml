@@ -1,0 +1,21 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% udewa_64
+</Textures>
+
+	<Materials>
+#
+% gnd_kusari_m_v
+#
+% gnd_udewa_m_v
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

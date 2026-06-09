@@ -1,0 +1,37 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% midona_mask_back_C
+#
+% midona_mask_clown_C
+#
+% midona_mask_front_C
+#
+% midona_mask_C
+#
+% midona_mask_back_C
+#
+% midona_mask_clown_C
+#
+% midona_mask_front_C
+</Textures>
+
+	<Materials>
+#
+% md_mask_C_m
+#
+% md_mask_back_C_m_v
+#
+% md_mask_clown_C_m
+#
+% md_mask_front_C_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

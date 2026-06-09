@@ -1,0 +1,63 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% zelR_02
+#
+% zelR_eye.1
+#
+% zelR_eye.2
+#
+% zelR_eye.3
+#
+% zelR_eye.4
+#
+% zelR_eye.5
+#
+% zelR_eye.6
+#
+% zelR_eyeball
+#
+% zelR_faceshadow
+#
+% zelR_02
+#
+% zelR_01
+#
+% zelR_01_line
+#
+% zelR_faceshadow
+#
+% zelR_eyeball
+#
+% zelR_eye_Hlight
+#
+% zelR_eye_Shadow
+#
+% zelR_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye_L
+#
+% SC_eye_R
+#
+% zelR_eyeball_L
+#
+% zelR_eyeball_R
+#
+% zelR_faceshadow_m
+#
+% zelR_robe01_m
+#
+% zelR_robe02_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

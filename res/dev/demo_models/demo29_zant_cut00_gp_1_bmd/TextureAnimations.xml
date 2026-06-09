@@ -1,0 +1,73 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% znt_body
+#
+% znt_eye.1
+#
+% znt_eye.2
+#
+% znt_eye.3
+#
+% znt_eye.4
+#
+% znt_eye.5
+#
+% znt_eyeball
+#
+% znt_face
+#
+% znt_helmet
+#
+% znt_face
+#
+% znt_nurunuru
+#
+% znt_helmet
+#
+% znt_helmet
+#
+% znt_face
+#
+% znt_eyeball
+#
+% znt_body
+#
+% znt_line
+#
+% znt_helmet
+#
+% slaver
+#
+% znt_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% slaver_m
+#
+% znt_armor_m
+#
+% znt_body_m
+#
+% znt_eyeball
+#
+% znt_face_m
+#
+% znt_helmet_m
+#
+% znt_shoulder_m
+#
+% znt_tongue_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

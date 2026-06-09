@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% grad
+</Textures>
+
+	<Materials>
+#
+% efShogeki1
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

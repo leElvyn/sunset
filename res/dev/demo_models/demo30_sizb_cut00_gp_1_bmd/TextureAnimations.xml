@@ -1,0 +1,19 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% sizuku_rain_128
+</Textures>
+
+	<Materials>
+#
+% sizuku_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

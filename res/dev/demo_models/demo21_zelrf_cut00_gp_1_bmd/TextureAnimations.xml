@@ -1,0 +1,37 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% bl_TF02
+#
+% bl_TF03
+#
+% zelR_body
+#
+% bl_TF03
+#
+% bl_TF02
+#
+% bl_TF01
+#
+% zelR_body
+</Textures>
+
+	<Materials>
+#
+% zelR_robe02_m
+#
+% zelRf_handRA_TF_01_m
+#
+% zelRf_handRA_TF_02_m
+#
+% zelRf_handRA_TF_03_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

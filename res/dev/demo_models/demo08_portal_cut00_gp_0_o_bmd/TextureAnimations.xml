@@ -1,0 +1,33 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% yamimoyouInd256i4_051104_01
+#
+% muramoyou32i4_051025_02
+#
+% cylinder03
+#
+% holeLine32i4_051025_02
+#
+% paraparanuki05
+</Textures>
+
+	<Materials>
+#
+% mat_1polyplane
+#
+% mat_2cylinder_out
+#
+% mat_3cylinder_in
+#
+% mat_4moyou
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

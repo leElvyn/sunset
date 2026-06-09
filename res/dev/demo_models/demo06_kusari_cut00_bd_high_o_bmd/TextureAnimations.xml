@@ -1,0 +1,103 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+#
+% kusari
+</Textures>
+
+	<Materials>
+#
+% wl_kusari_m
+#
+% wl_kusari_m(2)
+#
+% wl_kusari_m(3)
+#
+% wl_kusari_m(4)
+#
+% wl_kusari_m(5)
+#
+% wl_kusari_m(6)
+#
+% wl_kusari_m(7)
+#
+% wl_kusari_m(8)
+#
+% wl_kusari_m(9)
+#
+% wl_kusari_m(10)
+#
+% wl_kusari_m(11)
+#
+% wl_kusari_m(12)
+#
+% wl_kusari_m(13)
+#
+% wl_kusari_m(14)
+#
+% wl_kusari_m(15)
+#
+% wl_kusari_m(16)
+#
+% wl_kusari_m(17)
+#
+% wl_kusari_m(18)
+#
+% wl_kusari_m(19)
+#
+% wl_kusari_m(20)
+#
+% wl_kusari_m(21)
+#
+% wl_kusari_m(22)
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

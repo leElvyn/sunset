@@ -1,0 +1,35 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% ganonFire3
+#
+% yoganAmi
+#
+% zl2_indwp00
+#
+% zl2_glow03
+#
+% F_eyeball_02
+#
+% F_moya
+</Textures>
+
+	<Materials>
+#
+% gnp_eye_m_v
+#
+% nami_01_m_v_x
+#
+% nami_02_m_v_x
+#
+% nami_03_m_v_x
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

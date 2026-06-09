@@ -1,0 +1,51 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% henna_eye.1
+#
+% henna_eye.2
+#
+% henna_eye.3
+#
+% henna_eye.4
+#
+% henna_eye.5
+#
+% henna_eye.6
+#
+% henna_eyeball
+#
+% henna_face
+#
+% henna_face
+#
+% henna_body
+#
+% henna_eyeball
+#
+% henna_eye_Hlight
+#
+% henna_eye_shade
+#
+% henna_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% eyeball
+#
+% henna_body_m
+#
+% henna_face_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

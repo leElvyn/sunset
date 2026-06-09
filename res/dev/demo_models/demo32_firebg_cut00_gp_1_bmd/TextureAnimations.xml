@@ -1,0 +1,31 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% yoganAmi
+#
+% grad
+#
+% kumo_simple03IA8_zure
+#
+% zl2_indwp00
+#
+% grad
+#
+% kumo_simple
+</Textures>
+
+	<Materials>
+#
+% ef_firePlane1
+#
+% ef_firePlane1(2)
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

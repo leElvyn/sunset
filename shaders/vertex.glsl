@@ -27,7 +27,7 @@ void main() {
         + aWeights.z * u_joint_matrices[aJoints.z]
         + aWeights.w * u_joint_matrices[aJoints.w];
 
-    vec4 vertex_pos = u_view_projection * u_model_matrix * skinMatrix * vec4(aPosition, 1.0);
+    vec4 vertex_pos = u_view_projection * u_model_matrix * skinMatrix * vec4(0.01) * vec4(aPosition, 1.0);
     vertex_position = vertex_pos;
 
     tex_coord = aTexcoord;

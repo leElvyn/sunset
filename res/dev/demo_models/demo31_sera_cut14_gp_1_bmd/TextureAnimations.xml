@@ -1,0 +1,51 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% sera_eye.1
+#
+% sera_eye.2
+#
+% sera_eye.3
+#
+% sera_eye.4
+#
+% sera_eye.5
+#
+% sera_eye.6
+#
+% sera_eyeball
+#
+% sera_face
+#
+% sera_face
+#
+% sera_eyeball
+#
+% sera_eye_Hilight
+#
+% sera_eye_shade
+#
+% sera_body
+#
+% sera_eye.1
+</Textures>
+
+	<Materials>
+#
+% SC_eye
+#
+% sera_body_m
+#
+% sera_eyeball
+#
+% sera_face_m
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>

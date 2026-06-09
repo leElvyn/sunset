@@ -1,0 +1,135 @@
+<?xml version=1.0 encoding=utf-8?>
+
+<TextureAnimation>
+
+	<Textures>
+#
+% F_z_yuki01
+#
+% F_z_yuki02
+</Textures>
+
+	<Materials>
+#
+% aa_tuti1
+#
+% ice_parts_aa_kabe1_v
+#
+% ice_parts_aa_kabe2_v
+#
+% ice_parts_aa_tuti1_v
+#
+% aa_tuti1(2)
+#
+% ice_parts_aa_kabe1_v(2)
+#
+% ice_parts_aa_kabe2_v(2)
+#
+% ice_parts_aa_tuti1_v(2)
+#
+% ice_parts_aa_tuti1_v(3)
+#
+% aa_tuti1(3)
+#
+% ice_parts_aa_kabe1_v(3)
+#
+% ice_parts_aa_kabe2_v(3)
+#
+% ice_parts_aa_tuti1_v(4)
+#
+% ice_parts_aa_kabe1_v(4)
+#
+% ice_parts_aa_tuti1_v(5)
+#
+% ice_parts_aa_kabe1_v(5)
+#
+% ice_parts_aa_kabe2_v(4)
+#
+% ice_parts_aa_tuti1_v(6)
+#
+% aa_tuti1(4)
+#
+% ice_parts_aa_kabe1_v(6)
+#
+% ice_parts_aa_kabe2_v(5)
+#
+% ice_parts_aa_tuti1_v(7)
+#
+% aa_tuti1(5)
+#
+% ice_parts_aa_kabe1_v(7)
+#
+% ice_parts_aa_kabe2_v(6)
+#
+% ice_parts_aa_tuti1_v(8)
+#
+% aa_tuti1(6)
+#
+% ice_parts_aa_kabe2_v(7)
+#
+% ice_parts_aa_tuti1_v(9)
+#
+% aa_tuti1(7)
+#
+% ice_parts_aa_kabe1_v(8)
+#
+% ice_parts_aa_kabe2_v(8)
+#
+% ice_parts_aa_tuti1_v(10)
+#
+% aa_tuti1(8)
+#
+% ice_parts_aa_kabe1_v(9)
+#
+% ice_parts_aa_kabe2_v(9)
+#
+% ice_parts_aa_tuti1_v(11)
+#
+% aa_tuti1(9)
+#
+% aa_tuti1(10)
+#
+% aa_tuti1(11)
+#
+% aa_tuti1(12)
+#
+% aa_tuti1(13)
+#
+% aa_tuti1(14)
+#
+% aa_tuti1(15)
+#
+% aa_tuti1(16)
+#
+% aa_tuti1(17)
+#
+% ice_parts_aa_kabe1_v(10)
+#
+% ice_parts_aa_kabe2_v(10)
+#
+% ice_parts_aa_tuti1_v(12)
+#
+% ice_parts_aa_kabe1_v(11)
+#
+% ice_parts_aa_kabe2_v(11)
+#
+% ice_parts_aa_tuti1_v(13)
+#
+% ice_parts_aa_tuti1_v(14)
+#
+% ice_parts_aa_tuti1_v(15)
+#
+% ice_parts_aa_tuti1_v(16)
+#
+% ice_parts_aa_kabe1_v(12)
+#
+% ice_parts_aa_kabe2_v(12)
+#
+% ice_parts_aa_tuti1_v(17)
+</Materials>
+
+	<Animations>
+
+	</Animations>
+
+</TextureAnimation>
