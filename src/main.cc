@@ -124,10 +124,15 @@ void render_loop(GLFWwindow *win,
     scene.skinned_prog = skinned_prog;
     scene.static_prog  = static_prog;
     scene.init_lens_flare(flare_prog);
+
+    // Logo de titre (acteur TLogo) : quad en surimpression, fondu piloté par le STB.
+    program* logo_prog = program::make_program("shaders/logo.vert", "shaders/logo.frag");
+    scene.init_logo(logo_prog, "res/tlogo.png");
+
     scene.add_object("res/models/stage/Untitled.gltf",
                      glm::translate(glm::mat4(1.0f), glm::vec3(75.0f, 0.0f, 0.0f)), 2);
     int horse_obj = scene.add_object("res/models/Horse/Epona.gltf",
-                     glm::mat4(1.0f), 3)
+                     glm::mat4(1.0f), 4)
                         ? (int)scene.objects.size() - 1 : -1;
     // Remplacer la timeline par défaut par une séquence personnalisée
     // scene.objects[0].extra_layers.push_back(
@@ -140,12 +145,14 @@ void render_loop(GLFWwindow *win,
     CutsceneActor* cs_horse = nullptr;
     if (cs_ok) {
         cutscene.loop = false;
-        // cutscene.world = glm::scale(glm::mat4(1.0f), glm::vec3(0.01f));
-        // si l'échelle de la scène diffère des unités TP
 
-        // Les index d'animation du STB sont ceux des BCK du jeu ; les
-        // remapper ici vers les index glTF d'Epona si besoin :
-        cutscene.remap_animations("Horse", {{4, 12}, {5, 12}, {9, 12}});
+        cutscene.simulate_horse_drive("Horse", /*max_speed*/ 1800.0f,
+                                      /*facing_offset*/ 0.0f);
+
+        cutscene.remap_animations("Horse", {{1, 28}, {2, 26}, {3, 58},
+                                            {4, 24}, {5, 42}, {9, 28},
+                                            {10, 26}, {11, 58}});
+
         cs_horse = cutscene.find("Horse");
         if (cs_horse && horse_obj >= 0 && !cs_horse->timeline.clips.empty())
             scene.objects[horse_obj].timeline = cs_horse->timeline;
@@ -171,6 +178,12 @@ void render_loop(GLFWwindow *win,
         if (cs_horse && horse_obj >= 0)
             scene.objects[horse_obj].model_matrix =
                 cutscene.actor_transform(*cs_horse, cutscene.local_time((float)time));
+        std::cout << scene.objects[horse_obj].model_matrix << std::endl;
+
+        // Fondu du logo de titre piloté par l'acteur TLogo (apparaît ~60,3 s).
+        if (cs_ok)
+            scene.logo_alpha =
+                cutscene.logo_alpha("TLogo", cutscene.local_time((float)time), 1.5f);
 
         // Caméra cutscene si active, sinon caméra libre
         glm::mat4 vp;

@@ -62,6 +62,28 @@ struct CutsceneActor {
     CutsceneChannel rx, ry, rz; // rotation en degrés
     CutsceneChannel sx, sy, sz; // échelle
     Timeline timeline;          // clips bakés depuis les paragraphes ANIMATION
+
+    // Pour le cheval, la propriété ANIMATION ne porte pas un index d'animation
+    // mais un MODE dispatché par daHorse_c::setDemoData :
+    //   5            = téléport vers la position STB (+ angle)
+    //   2/3/4/10/11  = course/marche VERS la position STB (cible mobile)
+    //   1            = arrêt
+    // Les paragraphes TRANSLATION sont donc soit une position instantanée
+    // (téléport), soit une *cible* que le cheval rejoint progressivement.
+    std::vector<std::pair<float, int>> demo_modes; // (temps, mode)
+
+    // Position / lacet pré-simulés en respectant les modes (cf.
+    // Cutscene::simulate_horse_drive). has_sim=true => actor_transform lit ces
+    // tableaux au lieu d'échantillonner directement les canaux.
+    std::vector<glm::vec3> sim_pos;
+    std::vector<float>     sim_yaw;     // radians (lacet monde)
+    float sim_dt        = 1.0f / 30.0f;
+    bool  has_sim       = false;
+    float facing_offset = 0.0f;         // aligne l'avant du modèle (radians)
+
+    // Paragraphes DATA (0x80) horodatés : (temps, u32 big-endian). Pour TLogo :
+    // "31 vv 00 00", l'octet vv (bits 16..23) bascule l'affichage (0=off,1=on).
+    std::vector<std::pair<float, uint32_t>> data_events;
 };
 
 struct CutsceneCamera {
@@ -85,9 +107,30 @@ struct Cutscene {
     // Temps cutscene local (boucle ou clamp selon `loop`).
     float local_time(float time) const;
 
+    // Position (translation seule) d'un acteur à l'instant t.
+    glm::vec3 actor_position(const CutsceneActor& actor, float t,
+                             glm::vec3 fallback = {0, 0, 0}) const;
+
     // Matrice modèle d'un acteur à l'instant t (temps local).
     glm::mat4 actor_transform(const CutsceneActor& actor, float t,
                               glm::vec3 fallback_translation = {0, 0, 0}) const;
+
+    // Simule la position/orientation d'un acteur "cheval" en respectant les
+    // modes demo : téléport (5) instantané, course (2/3/4/10/11) qui rejoint la
+    // cible à vitesse bornée et oriente le cheval vers elle, arrêt (1) figé.
+    // max_speed en unités/s (≥ vitesse de galop pour suivre fidèlement le
+    // tracé ; borne uniquement les sauts type SET). facing_offset aligne
+    // l'avant du modèle. Remplit actor.sim_pos / sim_yaw.
+    void simulate_horse_drive(const std::string& actor_id,
+                              float max_speed = 15000.0f,
+                              float facing_offset = 0.0f);
+
+    // Opacité [0,1] d'un acteur "logo" piloté par ses paragraphes DATA (octet
+    // d'état 0/1). 0 tant qu'il est éteint ; rampe sur fade_in secondes à
+    // l'allumage, redescend sur fade_out à l'extinction. Pour TLogo : reste 0
+    // jusqu'à ~60,3 s puis fond en entrée.
+    float logo_alpha(const std::string& actor_id, float t,
+                     float fade_in = 1.5f, float fade_out = 1.0f) const;
 
     // Remplace les index d'animation bakés (index BCK du jeu → index glTF).
     void remap_animations(const std::string& actor_id,

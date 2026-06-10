@@ -55,7 +55,8 @@ std::vector<Animation> parse_animations(const tinygltf::Model& model) {
     return animations;
 }
 
-static glm::vec4 sample_channel(const AnimationSampler& sampler, float t) {
+static glm::vec4 sample_channel(const AnimationSampler& sampler, float t,
+                                bool is_rotation = false) {
     auto& times  = sampler.times;
     auto& values = sampler.values;
 
@@ -71,8 +72,20 @@ static glm::vec4 sample_channel(const AnimationSampler& sampler, float t) {
     if (sampler.interpolation == "STEP")
         return values[prev];
 
-    // LINEAR et CUBICSPLINE (fallback linéaire pour cubicspline)
-    return glm::mix(values[prev], values[next], factor);
+    glm::vec4 a = values[prev];
+    glm::vec4 b = values[next];
+
+    // Quaternions : double couverture — q et -q codent la même rotation. Si
+    // deux clés consécutives sont sur des hémisphères opposés (dot < 0),
+    // l'interpolation linéaire brute prend le « grand tour » (~360°) au lieu du
+    // plus court chemin, ce qui fait basculer l'os même pour de petites
+    // rotations. On réaligne b sur a (règle du plus petit mouvement) ; la
+    // renormalisation est faite par l'appelant (apply_animation).
+    if (is_rotation && glm::dot(a, b) < 0.0f)
+        b = -b;
+
+    // LINEAR et CUBICSPLINE (repli linéaire pour cubicspline)
+    return glm::mix(a, b, factor);
 }
 
 // Applique les channels d'une animation sur des transforms existants.
@@ -83,7 +96,8 @@ static void apply_animation(
     float time_t)
 {
     for (auto& channel : animation.channels) {
-        glm::vec4 val = sample_channel(channel.sampler, time_t);
+        bool is_rot = (channel.path == "rotation");
+        glm::vec4 val = sample_channel(channel.sampler, time_t, is_rot);
         NodeTransform& nt = transforms[channel.nodeIndex];
 
         if (channel.path == "rotation")
@@ -165,13 +179,17 @@ static void apply_animation_layer(
     float time_t)
 {
     for (auto& channel : animation.channels) {
-        glm::vec4 val = sample_channel(channel.sampler, time_t);
+        bool is_rot = (channel.path == "rotation");
+        glm::vec4 val = sample_channel(channel.sampler, time_t, is_rot);
         NodeTransform& nt       = transforms[channel.nodeIndex];
         const NodeTransform& rt = rest[channel.nodeIndex];
 
         if (channel.path == "rotation") {
             glm::quat q = glm::normalize(glm::quat(val.w, val.x, val.y, val.z));
-            if (glm::abs(glm::dot(q, rt.rotation)) > 0.f) continue;
+            // Sauter le canal s'il vaut la pose de repos : pour des quaternions
+            // « égal » ⇔ |dot| ≈ 1 (et non > 0, qui sautait quasiment toujours
+            // et empêchait toute rotation de layer de s'appliquer).
+            if (glm::abs(glm::dot(q, rt.rotation)) > 1.0f - 1e-4f) continue;
             nt.rotation = q;
         } else if (channel.path == "translation") {
             glm::vec3 t = glm::vec3(val);

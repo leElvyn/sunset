@@ -220,6 +220,10 @@ struct Baker {
     void set_animation(int index) {
         if (!actor || index == anim_index)
             return;
+        // Pour un cheval ce sont des modes demo, pas des index d'animation : on
+        // les conserve à part. La timeline reste bakée telle quelle (utile pour
+        // les autres acteurs ou un mapping mode→animation ultérieur).
+        actor->demo_modes.push_back({t, index});
         if (anim_index >= 0)
             actor->timeline.then(anim_index, t - anim_start, true, 0.2f);
         anim_index = index;
@@ -227,6 +231,11 @@ struct Baker {
     }
 
     void paragraph(const uint8_t* d, uint32_t ptype, size_t data, uint32_t csize) {
+        // Paragraphe DATA (0x80) : données propres à l'acteur (do_data). Pour
+        // TLogo, 4 octets "31 vv 00 00" où vv = 0/1 bascule l'affichage du logo.
+        if (ptype == 0x80 && actor && csize >= 4)
+            actor->data_events.push_back({t, rd_u32(d + data)});
+
         if (ptype <= 0xFF)
             return; // réservés : flags, data blobs… rien à exécuter ici
 
@@ -590,29 +599,151 @@ CutsceneActor* Cutscene::find(const std::string& id) {
     return nullptr;
 }
 
+float Cutscene::logo_alpha(const std::string& id, float t,
+                           float fade_in, float fade_out) const {
+    const CutsceneActor* a = nullptr;
+    for (auto& act : actors)
+        if (act.id == id) { a = &act; break; }
+    if (!a || a->data_events.empty())
+        return 0.0f;
+
+    // État courant (dernier événement <= t), instant de la dernière bascule, et
+    // état précédent (pour savoir si un OFF suit un ON → fondu de sortie, ou
+    // s'il n'a jamais été affiché → invisible).
+    auto on_of = [](uint32_t v) { return ((v >> 16) & 0xFF) != 0; };
+    bool  cur_on      = false;
+    bool  prev_was_on = false;
+    float since = a->data_events.front().first;
+    for (auto& ev : a->data_events) {
+        if (ev.first > t + 1e-6f)
+            break;
+        bool on = on_of(ev.second);
+        if (on != cur_on) {
+            prev_was_on = cur_on;
+            cur_on      = on;
+            since       = ev.first;
+        }
+    }
+
+    if (cur_on)
+        return (fade_in <= 0.0f) ? 1.0f
+                                 : std::min(1.0f, (t - since) / fade_in);
+    if (!prev_was_on)
+        return 0.0f; // jamais allumé : rien à estomper
+    return (fade_out <= 0.0f) ? 0.0f
+                              : std::max(0.0f, 1.0f - (t - since) / fade_out);
+}
+
 float Cutscene::local_time(float time) const {
     if (duration <= 0.0f)
         return 0.0f;
     return loop ? fmodf(time, duration) : std::min(time, duration);
 }
 
+glm::vec3 Cutscene::actor_position(const CutsceneActor& actor, float t,
+                                   glm::vec3 fallback) const {
+    return glm::vec3(actor.tx.sample(tracks, t, fallback.x),
+                     actor.ty.sample(tracks, t, fallback.y),
+                     actor.tz.sample(tracks, t, fallback.z));
+}
+
 glm::mat4 Cutscene::actor_transform(const CutsceneActor& actor, float t,
                                     glm::vec3 fallback_translation) const {
-    glm::vec3 tr(actor.tx.sample(tracks, t, fallback_translation.x),
-                 actor.ty.sample(tracks, t, fallback_translation.y),
-                 actor.tz.sample(tracks, t, fallback_translation.z));
-    glm::vec3 rot(actor.rx.sample(tracks, t, 0.0f),
-                  actor.ry.sample(tracks, t, 0.0f),
-                  actor.rz.sample(tracks, t, 0.0f));
     glm::vec3 sc(actor.sx.sample(tracks, t, 1.0f),
                  actor.sy.sample(tracks, t, 1.0f),
                  actor.sz.sample(tracks, t, 1.0f));
+
+    // ── Cheval : position/orientation issues de la simulation des modes ──────
+    if (actor.has_sim && !actor.sim_pos.empty()) {
+        float f = t / actor.sim_dt;
+        int   i = (int)f;
+        if (i < 0) { i = 0; f = 0.0f; }
+        if (i >= (int)actor.sim_pos.size() - 1)
+            i = (int)actor.sim_pos.size() - 1, f = (float)i;
+        float frac = f - i;
+        int   j = std::min(i + 1, (int)actor.sim_pos.size() - 1);
+
+        glm::vec3 pos = glm::mix(actor.sim_pos[i], actor.sim_pos[j], frac);
+        // interpolation d'angle robuste au passage ±π
+        float y0 = actor.sim_yaw[i], y1 = actor.sim_yaw[j];
+        float dy = std::remainder(y1 - y0, 2.0f * 3.14159265358979f);
+        float yaw = y0 + dy * frac;
+
+        glm::mat4 m = glm::translate(world, pos);
+        m = glm::rotate(m, yaw, glm::vec3(0, 1, 0));
+        return glm::scale(m, sc);
+    }
+
+    // ── Acteur standard : translation + rotation Euler des canaux STB ────────
+    glm::vec3 tr  = actor_position(actor, t, fallback_translation);
+    glm::vec3 rot(actor.rx.sample(tracks, t, 0.0f),
+                  actor.ry.sample(tracks, t, 0.0f),
+                  actor.rz.sample(tracks, t, 0.0f));
 
     glm::mat4 m = glm::translate(world, tr);
     m = glm::rotate(m, glm::radians(rot.y), glm::vec3(0, 1, 0));
     m = glm::rotate(m, glm::radians(rot.x), glm::vec3(1, 0, 0));
     m = glm::rotate(m, glm::radians(rot.z), glm::vec3(0, 0, 1));
     return glm::scale(m, sc);
+}
+
+void Cutscene::simulate_horse_drive(const std::string& actor_id,
+                                    float max_speed, float facing_offset) {
+    CutsceneActor* a = find(actor_id);
+    if (!a || duration <= 0.0f)
+        return;
+
+    a->facing_offset = facing_offset;
+    a->sim_dt  = 1.0f / 30.0f;
+    a->has_sim = true;
+    int N = (int)(duration / a->sim_dt) + 2;
+    a->sim_pos.assign(N, glm::vec3(0));
+    a->sim_yaw.assign(N, 0.0f);
+
+    auto mode_at = [&](float t) {
+        int m = 0;
+        for (auto& p : a->demo_modes) {
+            if (p.first > t + 1e-6f)
+                break;
+            m = p.second;
+        }
+        return m;
+    };
+    auto is_move = [](int m) {
+        return m == 2 || m == 3 || m == 4 || m == 10 || m == 11;
+    };
+
+    glm::vec3 pos = actor_position(*a, 0.0f);
+    float yaw = glm::radians(a->ry.sample(tracks, 0.0f, 0.0f));
+    float max_step = max_speed * a->sim_dt;
+
+    for (int i = 0; i < N; i++) {
+        float t = i * a->sim_dt;
+        int   mode   = mode_at(t);
+        glm::vec3 target = actor_position(*a, t, pos);
+
+        if (mode == 5) {
+            // Téléport : la position STB s'applique d'un coup. L'angle garde la
+            // valeur courante (setHorsePosAndAngle utilise shape_angle.y faute
+            // de paramètre "angle" explicite dans ce STB).
+            pos = target;
+        } else if (is_move(mode)) {
+            // Course vers la cible : on oriente le cheval vers elle et on
+            // avance à vitesse bornée. max_step ≥ pas du tracé => suit le tracé
+            // FVB exactement ; ne lisse que les sauts (SET) et téléports passés.
+            glm::vec3 d = target - pos;
+            glm::vec2 dxz(d.x, d.z);
+            if (glm::dot(dxz, dxz) > 1.0f)
+                yaw = std::atan2(dxz.x, dxz.y) + facing_offset; // dxz.y = ΔZ
+            float dist = glm::length(d);
+            if (dist > 1e-4f)
+                pos += d * (std::min(max_step, dist) / dist);
+        }
+        // mode 1 / 7 / 0 / inconnu : arrêt — on fige position et lacet.
+
+        a->sim_pos[i] = pos;
+        a->sim_yaw[i] = yaw;
+    }
 }
 
 void Cutscene::remap_animations(const std::string& actor_id,
@@ -653,7 +784,7 @@ bool Cutscene::camera_view_projection(float time, float aspect,
     if (roll != 0.0f)
         up = glm::mat3(glm::rotate(glm::mat4(1.0f), glm::radians(roll), forward)) * up;
 
-    glm::mat4 proj = glm::perspective(glm::radians(fov), aspect, 1.0f, 100000.0f);
+    glm::mat4 proj = glm::perspective(glm::radians(fov), aspect, 2.0f, 200000.0f);
     out = proj * glm::lookAt(eye, target, up);
     return true;
 }

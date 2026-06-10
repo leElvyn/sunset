@@ -6,10 +6,36 @@
 
 #include "animations.h"
 #include "models.h"
+#include "texture.h"   // stb_image (stbi_load)
 
 void Scene::init_lens_flare(program* prog) {
     flare_prog = prog;
     glGenVertexArrays(1, &flare_vao);
+}
+
+void Scene::init_logo(program* prog, const char* png_path) {
+    logo_prog = prog;
+    glGenVertexArrays(1, &logo_vao); // VAO vide : sommets générés par gl_VertexID
+
+    int channels = 0;
+    stbi_set_flip_vertically_on_load(false); // on inverse V dans le shader
+    unsigned char* data = stbi_load(png_path, &logo_w, &logo_h, &channels, 4);
+    if (!data) {
+        std::cout << "Logo: cannot load " << png_path << " (logo desactive)\n";
+        logo_tex = 0;
+        return;
+    }
+
+    glGenTextures(1, &logo_tex);
+    glBindTexture(GL_TEXTURE_2D, logo_tex);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, logo_w, logo_h, 0,
+                 GL_RGBA, GL_UNSIGNED_BYTE, data);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    stbi_image_free(data);
+    std::cout << "Logo: " << png_path << " (" << logo_w << "x" << logo_h << ")\n";
 }
 
 bool Scene::add_object(const char* path, glm::mat4 transform, int anim_index) {
@@ -115,5 +141,34 @@ void Scene::draw(glm::mat4 view_projection, glm::vec3 light_dir, glm::vec3 light
             glDepthFunc(GL_LESS);
             glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
         }
+    }
+
+    // ── Logo en surimpression (fondu piloté par logo_alpha) ──────────────────
+    if (logo_prog && logo_vao && logo_tex && logo_alpha > 0.0f) {
+        GLint viewport[4];
+        glGetIntegerv(GL_VIEWPORT, viewport);
+        float screen_aspect = (float)viewport[2] / (float)viewport[3];
+        float img_aspect    = (logo_h > 0) ? (float)logo_w / (float)logo_h : 1.0f;
+        // demi-hauteur fixe ; largeur dérivée pour préserver l'aspect de l'image
+        glm::vec2 half(logo_scale * img_aspect / screen_aspect, logo_scale);
+
+        glUseProgram(logo_prog->prog_id);
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, logo_tex);
+        glUniform1i(glGetUniformLocation(logo_prog->prog_id, "u_tex"), 0);
+        glUniform1f(glGetUniformLocation(logo_prog->prog_id, "u_alpha"),
+                    std::min(1.0f, logo_alpha));
+        glUniform2f(glGetUniformLocation(logo_prog->prog_id, "u_center"),
+                    logo_center.x, logo_center.y);
+        glUniform2f(glGetUniformLocation(logo_prog->prog_id, "u_halfsize"),
+                    half.x, half.y);
+
+        glDepthMask(GL_FALSE);
+        glDisable(GL_DEPTH_TEST);
+        glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+        glBindVertexArray(logo_vao);
+        glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+        glEnable(GL_DEPTH_TEST);
+        glDepthMask(GL_TRUE);
     }
 }
