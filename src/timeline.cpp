@@ -1,6 +1,8 @@
 #include "timeline.h"
 #include <algorithm>
 #include <cmath>
+#include <iostream>
+#include <ostream>
 
 Timeline::Eval Timeline::evaluate(const std::vector<Animation>& anims, float time) const {
     if (clips.empty() || anims.empty())

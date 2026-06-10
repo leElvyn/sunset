@@ -1,5 +1,6 @@
 #include "animations.h"
 
+#include <iostream>
 #include <glm/common.hpp>
 #include <glm/vec3.hpp>
 #include <glm/detail/type_quat.hpp>
@@ -13,9 +14,13 @@
 std::vector<Animation> parse_animations(const tinygltf::Model& model) {
     std::vector<Animation> animations;
 
+    int i = 0;
     for (auto& anim : model.animations) {
         Animation a;
         a.name = anim.name;
+        std::cout << "name: " << anim.name << " id : " << i << std::endl;
+
+        i++;
 
         for (auto& channel : anim.channels) {
             AnimationChannel ch;

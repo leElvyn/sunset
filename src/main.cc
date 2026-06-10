@@ -148,7 +148,7 @@ void render_loop(GLFWwindow *win,
 
         // Les index d'animation du STB sont ceux des BCK du jeu ; les
         // remapper ici vers les index glTF d'Epona si besoin :
-        cutscene.remap_animations("Horse", {{4, 12}, {5, 12}, {9, 12}});
+        cutscene.remap_animations("Horse", {{4, 24}, {5, 42}, {9, 28}});
         cs_horse = cutscene.find("Horse");
         if (cs_horse && horse_obj >= 0 && !cs_horse->timeline.clips.empty())
             scene.objects[horse_obj].timeline = cs_horse->timeline;
@@ -174,6 +174,7 @@ void render_loop(GLFWwindow *win,
         if (cs_horse && horse_obj >= 0)
             scene.objects[horse_obj].model_matrix =
                 cutscene.actor_transform(*cs_horse, cutscene.local_time((float)time));
+        std::cout << scene.objects[horse_obj].model_matrix << std::endl;
 
         // Caméra cutscene si active, sinon caméra libre
         glm::mat4 vp;
